@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hameeda Hossain — Collective</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white: #ffffff;
+    --off: #f9f9f8;
+    --ink: #111110;
+    --ink-mid: #444441;
+    --ink-muted: #88877f;
+    --rule: #e4e3df;
+    --accent: #2a2a28;
+    --serif: 'EB Garamond', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+
+  .nav-brand {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .nav-links a:hover { color: var(--ink); }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: var(--ink);
+  }
+
+  /* HERO */
+  .hero {
+    padding: 7rem 2rem 5rem;
+    max-width: 720px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.75rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .hero-bio {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    max-width: 580px;
+    font-weight: 400;
+  }
+
+  .hero-meta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .hero-meta-label {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  .hero-meta-value {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink);
+  }
+
+  /* COLLECTION GRID */
+  .collection {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+  }
+
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+
+  .category-card {
+    background: var(--white);
+    padding: 2rem 1.75rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: background 0.15s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .category-card:hover { background: var(--off); }
+
+  .category-card:hover .cat-arrow { opacity: 1; transform: translateX(0); }
+
+  .cat-icon {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .cat-title {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .cat-desc {
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .cat-count {
+    font-size: 11px;
+    color: var(--ink-muted);
+    letter-spacing: 0.06em;
+    margin-top: 0.5rem;
+  }
+
+  .cat-arrow {
+    position: absolute;
+    top: 2rem;
+    right: 1.75rem;
+    font-size: 1rem;
+    color: var(--ink-muted);
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: all 0.15s;
+  }
+
+  /* INDIVIDUAL SECTIONS */
+  .section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  .section-meta {
+    font-size: 12px;
+    color: var(--ink-muted);
+    letter-spacing: 0.06em;
+  }
+
+  /* ITEM LIST */
+  .item-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.1s;
+  }
+
+  .item:last-child { border-bottom: none; }
+
+  .item:hover .item-title { text-decoration: underline; text-decoration-color: var(--rule); }
+
+  .item-year {
+    font-size: 12px;
+    color: var(--ink-muted);
+    min-width: 38px;
+    flex-shrink: 0;
+    font-weight: 400;
+  }
+
+  .item-content { flex: 1; }
+
+  .item-title {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 2px;
+  }
+
+  .item-source {
+    font-size: 12px;
+    color: var(--ink-muted);
+  }
+
+  .item-tag {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: var(--off);
+    padding: 2px 8px;
+    border: 1px solid var(--rule);
+    white-space: nowrap;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  /* PHOTO GRID */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+
+  .photo-slot {
+    aspect-ratio: 4/3;
+    background: var(--off);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .photo-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+
+  .photo-slot:hover img { transform: scale(1.03); }
+
+  .photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink-muted);
+    font-size: 12px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .photo-placeholder svg { opacity: 0.3; }
+
+  /* MAGAZINE GRID */
+  .magazine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .magazine-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .magazine-cover {
+    aspect-ratio: 3/4;
+    background: var(--off);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .magazine-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s;
+  }
+
+  .magazine-card:hover .magazine-cover img { opacity: 0.88; }
+
+  .mag-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: var(--ink-muted);
+    font-size: 11px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .magazine-title {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  .magazine-year {
+    font-size: 11px;
+    color: var(--ink-muted);
+  }
+
+  /* ABOUT */
+  .about-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-portrait {
+    aspect-ratio: 3/4;
+    background: var(--off);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-muted);
+    font-size: 12px;
+  }
+
+  .about-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-text p {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--ink-mid);
+  }
+
+  .about-text p:first-child {
+    color: var(--ink);
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 2.5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-name {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink-muted);
+  }
+
+  .footer-note {
+    font-size: 12px;
+    color: var(--ink-muted);
+  }
+
+  /* MOBILE NAV MENU */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0; right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--rule);
+    padding: 1.5rem 2rem;
+    z-index: 99;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .mobile-menu.open { display: flex; }
+
+  .mobile-menu a {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    text-decoration: none;
+  }
+
+  /* UPLOAD HINT */
+  .upload-hint {
+    background: var(--off);
+    border: 1px dashed var(--rule);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  .upload-hint strong { color: var(--ink); font-weight: 500; }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .hero { padding: 4rem 1.25rem 3rem; }
+    .hero-meta { flex-wrap: wrap; gap: 1.5rem; }
+    .collection { padding: 2.5rem 1.25rem 4rem; }
+    .section { padding: 3rem 1.25rem; }
+    .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .about-portrait { max-width: 220px; }
+    footer { flex-direction: column; gap: 0.75rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#top" class="nav-brand">Hameeda Hossain</a>
+  <ul class="nav-links">
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#interviews">Interviews</a></li>
+    <li><a href="#writings">Writings</a></li>
+    <li><a href="#magazines">Magazines</a></li>
+    <li><a href="#archives">Archives</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#articles" onclick="closeMenu()">Articles</a>
+  <a href="#interviews" onclick="closeMenu()">Interviews</a>
+  <a href="#writings" onclick="closeMenu()">Writings</a>
+  <a href="#magazines" onclick="closeMenu()">Magazines</a>
+  <a href="#archives" onclick="closeMenu()">Archives</a>
+  <a href="#photos" onclick="closeMenu()">Photos</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <p class="hero-eyebrow">The Collective</p>
+  <h1>Hameeda<br><em>Hossain</em></h1>
+  <p class="hero-bio">
+    Lawyer, activist, writer, and editor — a life dedicated to human rights, 
+    women's justice, and civil liberties in Bangladesh and beyond. 
+    This archive gathers her published work, journalism, personal writings, 
+    and the magazines she built across five decades of public life.
+  </p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Active</span>
+      <span class="hero-meta-value">1970s – present</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Fields</span>
+      <span class="hero-meta-value">Law · Rights · Journalism</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Based in</span>
+      <span class="hero-meta-value">Dhaka, Bangladesh</span>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION OVERVIEW -->
+<div class="collection">
+  <p class="section-label">The Collection</p>
+  <div class="categories-grid">
+
+    <a href="#articles" class="category-card">
+      <div class="cat-icon">📰</div>
+      <div class="cat-title">Newspaper Articles</div>
+      <div class="cat-desc">Published pieces across national and international press spanning decades of commentary and reportage.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#interviews" class="category-card">
+      <div class="cat-icon">🎙</div>
+      <div class="cat-title">Interviews</div>
+      <div class="cat-desc">Conversations with journalists, academics, and media — her voice in dialogue with her times.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#writings" class="category-card">
+      <div class="cat-icon">✍️</div>
+      <div class="cat-title">Writings</div>
+      <div class="cat-desc">Essays, op-eds, forewords, and personal writing — the full range of her literary and intellectual output.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#magazines" class="category-card">
+      <div class="cat-icon">📖</div>
+      <div class="cat-title">Magazines</div>
+      <div class="cat-desc">Publications she founded and edited, including <em>Nari</em> and other landmark periodicals.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#archives" class="category-card">
+      <div class="cat-icon">🗂</div>
+      <div class="cat-title">Archives</div>
+      <div class="cat-desc">Historical documents, legal papers, letters, and records from her decades of institutional work.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#photos" class="category-card">
+      <div class="cat-icon">🖼</div>
+      <div class="cat-title">Photo Gallery</div>
+      <div class="cat-desc">Personal and public photographs — at work, in the field, at events, and in private moments.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#videos" class="category-card">
+      <div class="cat-icon">🎬</div>
+      <div class="cat-title">Videos & Talks</div>
+      <div class="cat-desc">Lectures, speeches, panel discussions, and documentary appearances.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="#books" class="category-card">
+      <div class="cat-icon">📚</div>
+      <div class="cat-title">Books & Reports</div>
+      <div class="cat-desc">Co-authored and edited volumes, research reports, and longer-form published works.</div>
+      <div class="cat-count">Add your files →</div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+  </div>
+</div>
+
+
+<!-- NEWSPAPER ARTICLES -->
+<section class="section" id="articles">
+  <div class="section-header">
+    <h2 class="section-title">Newspaper Articles</h2>
+    <span class="section-meta">Chronological</span>
+  </div>
+  <div class="item-list">
+    <!-- SAMPLE ENTRY — duplicate and fill in real ones -->
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Article title goes here</div>
+        <div class="item-source">Publication name · Date</div>
+      </div>
+      <span class="item-tag">PDF</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Article title goes here</div>
+        <div class="item-source">Publication name · Date</div>
+      </div>
+      <span class="item-tag">Link</span>
+    </a>
+  </div>
+  <div class="upload-hint">
+    <strong>How to add articles:</strong> Upload PDF scans or images to the <code>/articles/</code> folder in your GitHub repo, then link each &lt;a href=""&gt; to the file path. e.g. <code>href="articles/daily-star-1994.pdf"</code>
+  </div>
+</section>
+
+
+<!-- INTERVIEWS -->
+<section class="section" id="interviews">
+  <div class="section-header">
+    <h2 class="section-title">Interviews</h2>
+    <span class="section-meta">Chronological</span>
+  </div>
+  <div class="item-list">
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Interview title or publication</div>
+        <div class="item-source">Conducted by · Date</div>
+      </div>
+      <span class="item-tag">Audio</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Interview title or publication</div>
+        <div class="item-source">Conducted by · Date</div>
+      </div>
+      <span class="item-tag">Text</span>
+    </a>
+  </div>
+  <div class="upload-hint">
+    <strong>How to add interviews:</strong> Upload audio files or PDFs to <code>/interviews/</code>. For video, paste a YouTube or Vimeo link directly into the href.
+  </div>
+</section>
+
+
+<!-- WRITINGS -->
+<section class="section" id="writings">
+  <div class="section-header">
+    <h2 class="section-title">Writings</h2>
+    <span class="section-meta">Essays, op-eds & personal work</span>
+  </div>
+  <div class="item-list">
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Essay or piece title</div>
+        <div class="item-source">Where published or unpublished</div>
+      </div>
+      <span class="item-tag">Essay</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Essay or piece title</div>
+        <div class="item-source">Where published or unpublished</div>
+      </div>
+      <span class="item-tag">Foreword</span>
+    </a>
+  </div>
+  <div class="upload-hint">
+    <strong>How to add writings:</strong> Upload to <code>/writings/</code>. Tag each piece by type — Essay, Op-ed, Foreword, Letter, etc. — by changing the tag text.
+  </div>
+</section>
+
+
+<!-- MAGAZINES -->
+<section class="section" id="magazines">
+  <div class="section-header">
+    <h2 class="section-title">Magazines</h2>
+    <span class="section-meta">Publications she founded & edited</span>
+  </div>
+  <div class="magazine-grid">
+    <!-- Duplicate .magazine-card for each issue -->
+    <div class="magazine-card">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine / Issue Title</div>
+      <div class="magazine-year">Year · Vol. –</div>
+    </div>
+    <div class="magazine-card">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine / Issue Title</div>
+      <div class="magazine-year">Year · Vol. –</div>
+    </div>
+    <div class="magazine-card">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine / Issue Title</div>
+      <div class="magazine-year">Year · Vol. –</div>
+    </div>
+    <div class="magazine-card">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine / Issue Title</div>
+      <div class="magazine-year">Year · Vol. –</div>
+    </div>
+  </div>
+  <div class="upload-hint" style="margin-top:1.5rem">
+    <strong>How to add magazines:</strong> Upload cover images to <code>/magazines/covers/</code> and PDFs to <code>/magazines/issues/</code>. Add <code>&lt;img src="magazines/covers/nari-v1.jpg"&gt;</code> inside each .magazine-cover div, and wrap the card in an <code>&lt;a href="magazines/issues/nari-v1.pdf"&gt;</code>.
+  </div>
+</section>
+
+
+<!-- ARCHIVES -->
+<section class="section" id="archives">
+  <div class="section-header">
+    <h2 class="section-title">Archives</h2>
+    <span class="section-meta">Documents, letters & records</span>
+  </div>
+  <div class="item-list">
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Document or record title</div>
+        <div class="item-source">Source institution or context</div>
+      </div>
+      <span class="item-tag">Scan</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Document or record title</div>
+        <div class="item-source">Source institution or context</div>
+      </div>
+      <span class="item-tag">Letter</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Document or record title</div>
+        <div class="item-source">Source institution or context</div>
+      </div>
+      <span class="item-tag">Legal</span>
+    </a>
+  </div>
+  <div class="upload-hint">
+    <strong>How to add archive items:</strong> Upload scanned documents to <code>/archives/</code>. Tags can be: Scan, Letter, Legal, Report, Press Release, Speech.
+  </div>
+</section>
+
+
+<!-- PHOTOS -->
+<section class="section" id="photos">
+  <div class="section-header">
+    <h2 class="section-title">Photo Gallery</h2>
+    <span class="section-meta">Personal & public photographs</span>
+  </div>
+  <div class="photo-grid">
+    <!-- Replace divs with <img src="photos/photo1.jpg" alt="Caption"> inside each .photo-slot -->
+    <div class="photo-slot"><div class="photo-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 5l1.5-2h3L15 5"/></svg><span>Upload photo</span></div></div>
+    <div class="photo-slot"><div class="photo-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 5l1.5-2h3L15 5"/></svg><span>Upload photo</span></div></div>
+    <div class="photo-slot"><div class="photo-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 5l1.5-2h3L15 5"/></svg><span>Upload photo</span></div></div>
+    <div class="photo-slot"><div class="photo-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 5l1.5-2h3L15 5"/></svg><span>Upload photo</span></div></div>
+    <div class="photo-slot"><div class="photo-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 5l1.5-2h3L15 5"/></svg><span>Upload photo</span></div></div>
+    <div class="photo-slot"><div class="photo-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 5l1.5-2h3L15 5"/></svg><span>Upload photo</span></div></div>
+  </div>
+  <div class="upload-hint" style="margin-top:1.5rem">
+    <strong>How to add photos:</strong> Upload images to <code>/photos/</code>. Inside each .photo-slot, replace the placeholder div with: <code>&lt;img src="photos/hameeda-1985.jpg" alt="Brief caption"&gt;</code>
+  </div>
+</section>
+
+
+<!-- VIDEOS -->
+<section class="section" id="videos">
+  <div class="section-header">
+    <h2 class="section-title">Videos & Talks</h2>
+    <span class="section-meta">Lectures, speeches & appearances</span>
+  </div>
+  <div class="item-list">
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Talk or event title</div>
+        <div class="item-source">Event or channel · Date</div>
+      </div>
+      <span class="item-tag">YouTube</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Talk or event title</div>
+        <div class="item-source">Event or channel · Date</div>
+      </div>
+      <span class="item-tag">Panel</span>
+    </a>
+  </div>
+  <div class="upload-hint">
+    <strong>How to add videos:</strong> Paste the YouTube or Vimeo link into the href. For locally hosted video files, upload to <code>/videos/</code> and link directly.
+  </div>
+</section>
+
+
+<!-- BOOKS -->
+<section class="section" id="books">
+  <div class="section-header">
+    <h2 class="section-title">Books & Reports</h2>
+    <span class="section-meta">Published volumes & longer works</span>
+  </div>
+  <div class="item-list">
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Book or report title</div>
+        <div class="item-source">Publisher · Co-authors if any</div>
+      </div>
+      <span class="item-tag">Book</span>
+    </a>
+    <a href="#" class="item">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Book or report title</div>
+        <div class="item-source">Publisher · Co-authors if any</div>
+      </div>
+      <span class="item-tag">Report</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-header">
+    <h2 class="section-title">About Hameeda Hossain</h2>
+  </div>
+  <div class="about-layout">
+    <div class="about-portrait">
+      <!-- Replace with: <img src="photos/portrait.jpg" alt="Hameeda Hossain"> -->
+      <div style="text-align:center; color: var(--ink-muted); font-size:12px; padding:1rem">
+        Upload portrait<br>photo here
+      </div>
+    </div>
+    <div class="about-text">
+      <p>
+        Hameeda Hossain is one of Bangladesh's foremost human rights defenders, 
+        a legal scholar, writer, and founding figure of the women's movement in the country. 
+        Her work spans law, journalism, activism, and institution-building across more than five decades.
+      </p>
+      <p>
+        She co-founded Ain o Salish Kendra (ASK), Bangladesh's leading legal aid and human rights organisation, 
+        and served as its executive director for many years. She has been a consistent voice for 
+        democratic rights, minority protections, and gender justice in both national and international forums.
+      </p>
+      <p>
+        As a writer and editor, she shaped public discourse through the magazines and publications 
+        she built, her extensive journalism, and her essays on law, politics, and society. 
+        This collective gathers the breadth of that work in one place.
+      </p>
+      <p style="font-size: 0.95rem; color: var(--ink-muted);">
+        This archive is maintained by her collective. To contribute materials or corrections, 
+        please reach out via the repository.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">Hameeda Hossain — Collective</span>
+  <span class="footer-note">Hosted free on GitHub Pages · No rights reserved</span>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => closeMenu());
+  });
+</script>
+
+</body>
+</html>
