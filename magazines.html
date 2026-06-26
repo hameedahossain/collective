@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magazines — Hameeda Hossain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
+  <ul class="nav-links">
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="interviews.html">Interviews</a></li>
+    <li><a href="writings.html">Writings</a></li>
+    <li><a href="magazines.html" class="active">Magazines</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
+    </svg>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="articles.html" onclick="closeMenu()">Articles</a>
+  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
+  <a href="writings.html" onclick="closeMenu()">Writings</a>
+  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
+  <a href="archives.html" onclick="closeMenu()">Archives</a>
+  <a href="photos.html" onclick="closeMenu()">Photos</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+</div>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← Back to home</a>
+  <p class="page-header-eyebrow">The Collection</p>
+  <h1>Magazines</h1>
+  <p class="page-header-desc">Publications she founded and edited — issues of the periodicals she built, arranged by title and year.</p>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filter(this,'all')">All</button>
+  <button class="filter-btn" onclick="filter(this,'1970s')">1970s</button>
+  <button class="filter-btn" onclick="filter(this,'1980s')">1980s</button>
+  <button class="filter-btn" onclick="filter(this,'1990s')">1990s</button>
+  <button class="filter-btn" onclick="filter(this,'2000s')">2000s</button>
+  <!-- Add a filter per magazine title when you know the names, e.g.: -->
+  <!-- <button class="filter-btn" onclick="filter(this,'Nari')">Nari</button> -->
+</div>
+
+<div class="content-area">
+
+  <div class="magazine-grid" id="magGrid">
+
+    <!--
+    HOW TO ADD A MAGAZINE ISSUE:
+    1. Upload cover image to magazines/covers/ folder (JPG or PNG)
+    2. Upload PDF of the issue to magazines/issues/ folder
+    3. Copy the block below and fill in the details
+    4. Set data-decade to match your filter buttons
+
+    <a href="magazines/issues/nari-v1-1980.pdf" class="magazine-card" data-decade="1980s">
+      <div class="magazine-cover">
+        <img src="magazines/covers/nari-v1-1980.jpg" alt="Nari Vol 1 1980 cover">
+      </div>
+      <div class="magazine-title">Nari — Vol. 1</div>
+      <div class="magazine-year">1980</div>
+    </a>
+    -->
+
+    <!-- SAMPLE ENTRIES -->
+    <div class="magazine-card" data-decade="1980s">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine Title — Vol. 1</div>
+      <div class="magazine-year">Year</div>
+    </div>
+
+    <div class="magazine-card" data-decade="1980s">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine Title — Vol. 2</div>
+      <div class="magazine-year">Year</div>
+    </div>
+
+    <div class="magazine-card" data-decade="1990s">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine Title — Vol. 3</div>
+      <div class="magazine-year">Year</div>
+    </div>
+
+    <div class="magazine-card" data-decade="1990s">
+      <div class="magazine-cover">
+        <div class="mag-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          <span>Upload cover</span>
+        </div>
+      </div>
+      <div class="magazine-title">Magazine Title — Vol. 4</div>
+      <div class="magazine-year">Year</div>
+    </div>
+
+  </div>
+
+  <div class="upload-hint">
+    <strong>To add a magazine issue:</strong> Upload the cover image to <code>magazines/covers/</code> and the PDF to <code>magazines/issues/</code>. Wrap the card in an <code>&lt;a href="..."&gt;</code> tag pointing to the PDF, and add an <code>&lt;img&gt;</code> tag inside the .magazine-cover div for the cover image.
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Hameeda Hossain — Collective</span>
+  <span class="footer-note">Hosted free on GitHub Pages</span>
+</footer>
+
+<script>
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  function filter(btn, value) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#magGrid .magazine-card').forEach(card => {
+      const match = value === 'all' || card.dataset.decade === value || card.dataset.title === value;
+      card.style.display = match ? '' : 'none';
+    });
+  }
+</script>
+</body>
+</html>

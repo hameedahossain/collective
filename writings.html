@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writings — Hameeda Hossain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
+  <ul class="nav-links">
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="interviews.html">Interviews</a></li>
+    <li><a href="writings.html" class="active">Writings</a></li>
+    <li><a href="magazines.html">Magazines</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
+    </svg>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="articles.html" onclick="closeMenu()">Articles</a>
+  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
+  <a href="writings.html" onclick="closeMenu()">Writings</a>
+  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
+  <a href="archives.html" onclick="closeMenu()">Archives</a>
+  <a href="photos.html" onclick="closeMenu()">Photos</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+</div>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← Back to home</a>
+  <p class="page-header-eyebrow">The Collection</p>
+  <h1>Writings</h1>
+  <p class="page-header-desc">Essays, op-eds, forewords, speeches, and personal writing — the full range of her literary and intellectual output.</p>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filter(this,'all')">All</button>
+  <button class="filter-btn" onclick="filter(this,'1970s')">1970s</button>
+  <button class="filter-btn" onclick="filter(this,'1980s')">1980s</button>
+  <button class="filter-btn" onclick="filter(this,'1990s')">1990s</button>
+  <button class="filter-btn" onclick="filter(this,'2000s')">2000s</button>
+  <button class="filter-btn" onclick="filter(this,'2010s')">2010s</button>
+  <button class="filter-btn" onclick="filter(this,'2020s')">2020s</button>
+  <button class="filter-btn" onclick="filter(this,'Essay')">Essays</button>
+  <button class="filter-btn" onclick="filter(this,'Op-ed')">Op-eds</button>
+  <button class="filter-btn" onclick="filter(this,'Foreword')">Forewords</button>
+  <button class="filter-btn" onclick="filter(this,'Speech')">Speeches</button>
+</div>
+
+<div class="content-area">
+  <div class="item-list" id="itemList">
+
+    <!--
+    HOW TO ADD A WRITING:
+    Upload PDF to writings/ folder, or for online pieces paste the URL.
+    Set data-decade and data-type to match your filter buttons.
+    Types available: Essay, Op-ed, Foreword, Speech, Letter, Report
+
+    <a href="writings/your-file.pdf" class="item" data-decade="1990s" data-type="Essay">
+      <span class="item-year">1997</span>
+      <div class="item-content">
+        <div class="item-title">Women and the Law in Bangladesh</div>
+        <div class="item-source">Published in — Journal or book name</div>
+      </div>
+      <span class="item-tag">Essay</span>
+    </a>
+    -->
+
+    <a href="#" class="item" data-decade="1990s" data-type="Essay">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Essay title goes here</div>
+        <div class="item-source">Published in</div>
+      </div>
+      <span class="item-tag">Essay</span>
+    </a>
+    <a href="#" class="item" data-decade="2000s" data-type="Op-ed">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Op-ed title goes here</div>
+        <div class="item-source">Published in</div>
+      </div>
+      <span class="item-tag">Op-ed</span>
+    </a>
+    <a href="#" class="item" data-decade="1980s" data-type="Foreword">
+      <span class="item-year">——</span>
+      <div class="item-content">
+        <div class="item-title">Foreword to — Book title</div>
+        <div class="item-source">Publisher</div>
+      </div>
+      <span class="item-tag">Foreword</span>
+    </a>
+
+  </div>
+
+  <div class="upload-hint">
+    <strong>To add a writing:</strong> Upload to the <code>writings/</code> folder in GitHub. Set <code>data-decade</code> (e.g. "1990s") and <code>data-type</code> (Essay, Op-ed, Foreword, Speech, Letter) so both sets of filters work.
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Hameeda Hossain — Collective</span>
+  <span class="footer-note">Hosted free on GitHub Pages</span>
+</footer>
+
+<script>
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  function filter(btn, value) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#itemList .item').forEach(item => {
+      const match = value === 'all' || item.dataset.decade === value || item.dataset.type === value;
+      item.classList.toggle('hidden', !match);
+    });
+  }
+</script>
+</body>
+</html>

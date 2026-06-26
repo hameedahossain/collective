@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Hameeda Hossain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .about-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .about-portrait {
+    aspect-ratio: 3/4;
+    background: var(--off);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-muted); font-size: 12px; text-align: center; padding: 1rem;
+  }
+  .about-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .about-text { display: flex; flex-direction: column; gap: 1.4rem; }
+  .about-text p {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: var(--ink-mid);
+  }
+  .about-text p:first-child { color: var(--ink); font-size: 1.2rem; }
+
+  .timeline {
+    margin-top: 1rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 2rem;
+  }
+  .timeline-label {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 1.5rem;
+  }
+  .timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-year {
+    font-size: 12px;
+    color: var(--ink-muted);
+    min-width: 48px;
+    flex-shrink: 0;
+  }
+  .timeline-event {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 700px) {
+    .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .about-portrait { max-width: 200px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
+  <ul class="nav-links">
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="interviews.html">Interviews</a></li>
+    <li><a href="writings.html">Writings</a></li>
+    <li><a href="magazines.html">Magazines</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
+    </svg>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="articles.html" onclick="closeMenu()">Articles</a>
+  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
+  <a href="writings.html" onclick="closeMenu()">Writings</a>
+  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
+  <a href="archives.html" onclick="closeMenu()">Archives</a>
+  <a href="photos.html" onclick="closeMenu()">Photos</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+</div>
+
+<div class="page-header">
+  <a href="index.html" class="back-link">← Back to home</a>
+  <p class="page-header-eyebrow">The Collective</p>
+  <h1>About Hameeda Hossain</h1>
+</div>
+
+<div class="content-area" style="max-width: 900px;">
+  <div class="about-layout">
+    <div class="about-portrait">
+      <!-- Replace with: <img src="photos/portrait.jpg" alt="Hameeda Hossain"> -->
+      Upload portrait photo here
+    </div>
+    <div class="about-text">
+      <p>
+        Hameeda Hossain is one of Bangladesh's foremost human rights defenders —
+        a legal scholar, writer, activist, and founding figure of the women's rights
+        movement in the country. Her work spans law, journalism, activism, and
+        institution-building across more than five decades.
+      </p>
+      <p>
+        She co-founded Ain o Salish Kendra (ASK), Bangladesh's leading legal aid
+        and human rights organisation, and served as its executive director for many years.
+        She has been a consistent voice for democratic rights, minority protections,
+        and gender justice in both national and international forums.
+      </p>
+      <p>
+        As a writer and editor, she shaped public discourse through the magazines and
+        publications she built, her extensive journalism, and her essays on law, politics,
+        and society. She has contributed forewords and chapters to numerous books on
+        South Asian women's rights and constitutional law.
+      </p>
+      <p>
+        <!-- Add more biographical detail here — replace this paragraph -->
+        This collective gathers the breadth of her published work, personal writings,
+        and historical documents in one place, so that her contribution to public life
+        is preserved and accessible to researchers, students, and anyone interested
+        in the history of human rights in Bangladesh.
+      </p>
+    </div>
+  </div>
+
+  <!-- TIMELINE — add or edit events as needed -->
+  <div class="timeline">
+    <p class="timeline-label">Selected milestones</p>
+
+    <div class="timeline-item">
+      <span class="timeline-year">——</span>
+      <span class="timeline-event">Add a milestone or key event here</span>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">——</span>
+      <span class="timeline-event">Co-founded Ain o Salish Kendra (ASK)</span>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">——</span>
+      <span class="timeline-event">Add a milestone or key event here</span>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">——</span>
+      <span class="timeline-event">Add a milestone or key event here</span>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">——</span>
+      <span class="timeline-event">Add a milestone or key event here</span>
+    </div>
+
+  </div>
+
+  <div class="upload-hint" style="margin-top: 2rem;">
+    <strong>To update this page:</strong> Edit the biography paragraphs and timeline events directly in <code>about.html</code>. To add her portrait, upload a photo to <code>photos/portrait.jpg</code> and replace the placeholder text inside .about-portrait with <code>&lt;img src="photos/portrait.jpg" alt="Hameeda Hossain"&gt;</code>.
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Hameeda Hossain — Collective</span>
+  <span class="footer-note">Hosted free on GitHub Pages</span>
+</footer>
+
+<script>
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
+</body>
+</html>
