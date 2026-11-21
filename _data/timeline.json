@@ -12,7 +12,8 @@
   "image_hint": "family photograph or view of old Hyderabad, Sindh with its wind-catchers",
   "related_writing": "",
   "image": "photo:with-her-sisters",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1942,
@@ -21,18 +22,19 @@
   "text": "The British crushed the Hur insurgency led by the Pir of Pagaro with special laws and martial law in Sindh from June 1942 to May 1943; the Pir was hanged in March 1943.",
   "strand": "history",
   "place": "Sindh",
-  "connection": "Her father was a judge hearing Hur cases in Khairpur, and the unrest led her mother to move the children to Karachi; she recalls it in her memoir.",
+  "connection": "Her father was a judge hearing Hur cases in Khairpur, and the unrest led her mother to move the children to Karachi.",
   "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx",
   "confidence": "confirmed",
   "image_hint": "archival photo of 1940s Sindh or Khairpur",
   "related_writing": "Memoir, Chapter 1 – Early Years in Sindh",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1944,
-  "date": "c. 1944–1945",
+  "date": "mid-1940s",
   "title": "Schooldays in wartime Karachi",
-  "text": "She cycled to St Joseph's Convent in a mixed, cosmopolitan Karachi full of soldiers in the last years of the Second World War. The date is approximate: her memoir says the family moved in the mid-1940s when she was about ten.",
+  "text": "She cycled to St Joseph's Convent in a mixed, cosmopolitan Karachi full of soldiers in the last years of the Second World War.",
   "strand": "life",
   "place": "Karachi",
   "connection": "",
@@ -41,7 +43,8 @@
   "image_hint": "1940s Karachi street scene or Frere Hall",
   "related_writing": "Memoir, Chapter 2 – Karachi",
   "image": "photo:with-brother-iqbal",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1947,
@@ -50,12 +53,13 @@
   "text": "India and Pakistan became independent on 14–15 August 1947 amid mass migration and communal violence across Punjab and Bengal.",
   "strand": "history",
   "place": "South Asia",
-  "connection": "She saw Hindu classmates and neighbours leave Hyderabad and injured refugees arrive by train; she wrote about it in her memoir and her BDI lecture.",
+  "connection": "She saw Hindu classmates and neighbours leave Hyderabad and injured refugees arrive by train.",
   "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx",
   "confidence": "confirmed",
   "image_hint": "photo of refugee trains at Partition, 1947",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": null
  },
  {
   "year": 1947,
@@ -69,13 +73,17 @@
   "confidence": "confirmed",
   "image_hint": "refugees at a railway platform, Sindh 1947",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": {
+   "href": "writings/herstory-womens-initiatives-for-peace-and-coping-with-war.html",
+   "label": "Herstory: Women's Initiatives for Peace"
+  }
  },
  {
   "year": 1950,
-  "date": "c. 1949–1950",
+  "date": "c. 1950",
   "title": "Matriculation from St Mary's Convent",
-  "text": "She passed her Matriculation from St Mary's Convent in Hyderabad, Sindh, after most Hindu students had left the city. She gives the year as 1949/1950, so it is approximate.",
+  "text": "She passed her Matriculation from St Mary's Convent in Hyderabad, Sindh, after most Hindu students had left the city.",
   "strand": "life",
   "place": "Hyderabad, Sindh",
   "connection": "",
@@ -84,7 +92,8 @@
   "image_hint": "convent school photograph, 1940s–50s",
   "related_writing": "",
   "image": "photo:hyderabad-drama-group",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1952,
@@ -98,7 +107,8 @@
   "confidence": "confirmed",
   "image_hint": "photo of Language Movement procession, Dhaka 1952",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1952,
@@ -113,7 +123,11 @@
   "image_hint": "HH with the 1952 Herald Tribune Forum delegates, or newspaper clipping",
   "related_writing": "The World We Want (Forum booklet)",
   "image": "photo:herald-tribune-pakistan-flag",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "photos.html",
+   "label": "Photographs from the Forum, 1952"
+  }
  },
  {
   "year": 1954,
@@ -128,13 +142,14 @@
   "image_hint": "HH at Wellesley (Tower Court or campus photo)",
   "related_writing": "",
   "image": "photo:wellesley-tower-court",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1957,
   "date": "1957",
-  "title": "Graduates; UN internship and London",
-  "text": "After graduating she interned in the UN Secretariat's information unit in New York, then spent six months in London working for a women's organisation that helped women's groups register to vote. Her CV gives the BA as 1958, but her interview says she was at Wellesley from 1954 to 1957 and her memoir has her home in Karachi by early 1958.",
+  "title": "Graduates from Wellesley; UN internship",
+  "text": "After graduating she interned in the UN Secretariat's information unit in New York, then spent six months in London working for a women's organisation that helped women's groups register to vote.",
   "strand": "life",
   "place": "New York / London",
   "connection": "",
@@ -143,7 +158,8 @@
   "image_hint": "HH at Wellesley graduation or at the UN, 1957",
   "related_writing": "",
   "image": "photo:young-portrait-1950s",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1958,
@@ -157,7 +173,8 @@
   "confidence": "confirmed",
   "image_hint": "newspaper front page announcing martial law, 1958",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1958,
@@ -171,7 +188,8 @@
   "confidence": "confirmed",
   "image_hint": "1950s Karachi office or Outlook magazine cover",
   "related_writing": "Polygamy Outvoted (Outlook)",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1961,
@@ -185,13 +203,14 @@
   "confidence": "confirmed",
   "image_hint": "photo of 1950s–60s Pakistani women's rights campaigners",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1963,
   "date": "1963",
   "title": "First visit to Dhaka",
-  "text": "A month's visit to her sister in Dhaka drew her into university debates on autonomy, women's groups and artisan communities; she met Rehman Sobhan and Kamal Hossain and helped edit an issue of Sarwar Murshid's journal New Values. Most of her accounts say 1963, but two tributes give 1962 and a Forum draft says 1964.",
+  "text": "A month's visit to her sister in Dhaka drew her into university debates on autonomy, women's groups and artisan communities; she met Rehman Sobhan and Kamal Hossain and helped edit an issue of Sarwar Murshid's journal New Values.",
   "strand": "life",
   "place": "Dhaka, East Pakistan",
   "connection": "",
@@ -199,13 +218,17 @@
   "confidence": "likely",
   "image_hint": "Dhaka University Teachers' Common Room or New Values journal cover",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": {
+   "href": "writings/memories-of-my-encounters-with-anisuzzaman.html",
+   "label": "Memories of My Encounters with Anisuzzaman"
+  }
  },
  {
   "year": 1964,
-  "date": "1964 or 1965",
+  "date": "1964",
   "title": "Marriage to Kamal Hossain",
-  "text": "She married the lawyer Dr Kamal Hossain and settled in Dhaka, where she set about learning Bangla. Wikipedia and her Anisuzzaman tribute point to 1964; her BDI lecture and career notes say she came to live in Dhaka in 1965.",
+  "text": "She married Dr Kamal Hossain and settled in Dhaka, where she set about learning Bangla.",
   "strand": "life",
   "place": "Dhaka",
   "connection": "",
@@ -213,13 +236,14 @@
   "confidence": "likely",
   "image_hint": "wedding or early portrait of Hameeda and Kamal Hossain",
   "related_writing": "How Kamal and I Married",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1965,
   "date": "mid-1960s",
   "title": "An artisans' outlet in Dhanmondi",
-  "text": "With her sister and friends she opened a garage outlet in Dhanmondi so village artisans could sell directly to urban buyers rather than through middlemen. Her notes call it Srijani; her Karika history and BDI lecture call it Arunima.",
+  "text": "With her sister and friends she opened a small outlet in Dhanmondi so village artisans could sell directly to urban buyers rather than through middlemen.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -227,7 +251,8 @@
   "confidence": "likely",
   "image_hint": "village artisans with crafts, or kantha and pottery display",
   "related_writing": "The Story of KARIKA",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1966,
@@ -241,13 +266,14 @@
   "confidence": "confirmed",
   "image_hint": "photo of Six Points rally, 1966",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1967,
   "date": "late 1960s",
   "title": "Her daughters are born",
-  "text": "Her two daughters were born in Dhaka in the late 1960s; in March 1971 they were four and two. The elder, Sara Hossain, became a barrister and human-rights lawyer. The younger, Dina Hossain, became a documentary filmmaker, whose work began at PBS in the United States, and now teaches documentary filmmaking at BRAC University.",
+  "text": "Her two daughters were born in Dhaka in the late 1960s. The elder, Sara Hossain, is a barrister and human-rights lawyer; the younger, Dina Hossain, is a documentary filmmaker and teacher.",
   "strand": "life",
   "place": "Dhaka",
   "connection": "",
@@ -255,7 +281,8 @@
   "confidence": "likely",
   "image_hint": "",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1969,
@@ -269,13 +296,17 @@
   "confidence": "confirmed",
   "image_hint": "photo of 1969 student procession, Dhaka",
   "related_writing": "On Ayesha Khanam",
-  "related_slug": "on-ayesha-khanam"
+  "related_slug": "on-ayesha-khanam",
+  "link": {
+   "href": "writings/on-ayesha-khanam.html",
+   "label": "On Ayesha Khanam"
+  }
  },
  {
   "year": 1969,
   "date": "November 1969",
   "title": "Forum's first issue",
-  "text": "She was editor, with Rehman Sobhan as executive editor and Kamal Hossain as publisher, of Forum, an English-language political weekly run from a garage room in Circuit House Road. Its first editorial was 'In Search of Freedom'. Permission had come in 1967 or 1968 (her accounts differ), and her CV dates her editorship 1967–71.",
+  "text": "She was editor, with Rehman Sobhan as executive editor and Kamal Hossain as publisher, of Forum, an English-language political weekly run from a garage room in Circuit House Road. Its first editorial was 'In Search of Freedom'.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -283,7 +314,8 @@
   "confidence": "confirmed",
   "image_hint": "cover of Forum weekly (first cover sketched by Zainul Abedin)",
   "related_writing": "Memoir, Chapter 5 – Forum",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1970,
@@ -297,7 +329,11 @@
   "confidence": "confirmed",
   "image_hint": "photo of Begum Sufia Kamal addressing women, c. 1970",
   "related_writing": "On Ayesha Khanam",
-  "related_slug": "on-ayesha-khanam"
+  "related_slug": "on-ayesha-khanam",
+  "link": {
+   "href": "writings/on-ayesha-khanam.html",
+   "label": "On Ayesha Khanam"
+  }
  },
  {
   "year": 1971,
@@ -311,7 +347,8 @@
   "confidence": "confirmed",
   "image_hint": "Forum issue of 6 March 1971 or Dhaka street protest, March 1971",
   "related_writing": "Memoir, Chapter 6 – March 1971",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1971,
@@ -325,7 +362,8 @@
   "confidence": "confirmed",
   "image_hint": "photo of the 7 March 1971 rally at the Race Course",
   "related_writing": "Memoir, Chapter 6 – March 1971",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1971,
@@ -339,7 +377,8 @@
   "confidence": "confirmed",
   "image_hint": "last Forum editorial page or Dhaka, March 1971",
   "related_writing": "Memoir, Chapter 5 – Forum",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1971,
@@ -353,7 +392,11 @@
   "confidence": "confirmed",
   "image_hint": "photo of 16 December 1971 surrender or refugees",
   "related_writing": "Independence, Yes – What Became of Liberation",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#of-the-nation-born",
+   "label": "Of the Nation Born (book)"
+  }
  },
  {
   "year": 1972,
@@ -367,7 +410,8 @@
   "confidence": "confirmed",
   "image_hint": "crowds at Dhaka airport, January 1972",
   "related_writing": "Memoir – Going Home",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1972,
@@ -376,12 +420,13 @@
   "text": "She volunteered at the Women's Rehabilitation Centre set up by Begum Sufia Kamal and Badrunnesa Ahmed, and helped war-widowed women in a Kushtia village and in Mirpur form groups to stitch and sell kanthas. She kept one of those kanthas as a symbol of their survival.",
   "strand": "movement",
   "place": "Dhaka / Kushtia",
-  "connection": "Her own direct work in the post-war women's movement.",
+  "connection": "",
   "source": "09 Speeches/The Challenge of Citizenship in Building a Just Society – BDI Lifetime Award Lecture (Nov 2021).docx; 04 Memoir/07 1972/Hameeda – History -1972 Return to Dhaka(HH).docx",
   "confidence": "confirmed",
   "image_hint": "kantha from Baradi, Kushtia, or women stitching kanthas",
   "related_writing": "Juddhakranto Narir Punorbashon (Rehabilitation of War-Affected Women)",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1972,
@@ -395,7 +440,8 @@
   "confidence": "confirmed",
   "image_hint": "1972 Constitution manuscript",
   "related_writing": "Gender in the Development Discourse",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1972,
@@ -409,7 +455,8 @@
   "confidence": "confirmed",
   "image_hint": "",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1973,
@@ -423,8 +470,8 @@
   "confidence": "confirmed",
   "image_hint": "1973 crafts exhibition or folk crafts display",
   "related_writing": "The Story of KARIKA",
-  "image": "photo:crafts-exhibition-1970s",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1974,
@@ -438,7 +485,8 @@
   "confidence": "confirmed",
   "image_hint": "KARIKA shop or logo (designed by Qamrul Hasan)",
   "related_writing": "The Story of KARIKA",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1975,
@@ -452,7 +500,8 @@
   "confidence": "confirmed",
   "image_hint": "photo of the 1975 Mexico City women's conference",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": null
  },
  {
   "year": 1975,
@@ -466,7 +515,8 @@
   "confidence": "confirmed",
   "image_hint": "newspaper front page, August 1975",
   "related_writing": "Memoir – My Recollections of August 1975",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1975,
@@ -480,13 +530,14 @@
   "confidence": "confirmed",
   "image_hint": "Oxford street scene, late 1970s, or family in Oxford",
   "related_writing": "Memoir – Oxford Years",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1976,
   "date": "c. 1976",
   "title": "Doctoral research on Bengal's weavers",
-  "text": "Encouraged by Tapan Raychaudhuri, she enrolled at St Antony's College and studied East India Company records in the India Office Library on Bengal's textile trade. The start date is not given; she says the idea came after settling in Oxford in 1975.",
+  "text": "Encouraged by Tapan Raychaudhuri, she enrolled at St Antony's College, Oxford, and studied East India Company records in the India Office Library on Bengal's textile trade.",
   "strand": "life",
   "place": "Oxford / London",
   "connection": "",
@@ -494,7 +545,11 @@
   "confidence": "likely",
   "image_hint": "India Office records or St Antony's College",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#company-weavers-of-bengal",
+   "label": "The Company Weavers of Bengal (book)"
+  }
  },
  {
   "year": 1979,
@@ -508,7 +563,8 @@
   "confidence": "confirmed",
   "image_hint": "",
   "related_writing": "Alienation of Weavers",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1979,
@@ -522,13 +578,17 @@
   "confidence": "confirmed",
   "image_hint": "UN General Assembly hall",
   "related_writing": "Implementing Women's Rights through CEDAW",
-  "related_slug": "implementing-womens-rights-through-cedaw-report-on-cedaw"
+  "related_slug": "implementing-womens-rights-through-cedaw-report-on-cedaw",
+  "link": {
+   "href": "writings/implementing-womens-rights-through-cedaw-report-on-cedaw.html",
+   "label": "Implementing Women's Rights through CEDAW"
+  }
  },
  {
   "year": 1982,
   "date": "1982",
   "title": "DPhil in Modern History, Oxford",
-  "text": "She completed her doctorate in modern history at St Antony's College, Oxford, and the family returned to Dhaka around 1981–82.",
+  "text": "She completed her doctorate in modern history at St Antony's College, Oxford, and the family returned to Dhaka.",
   "strand": "life",
   "place": "Oxford",
   "connection": "",
@@ -536,7 +596,11 @@
   "confidence": "confirmed",
   "image_hint": "HH in academic dress, Oxford",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#company-weavers-of-bengal",
+   "label": "The Company Weavers of Bengal (book)"
+  }
  },
  {
   "year": 1984,
@@ -550,13 +614,17 @@
   "confidence": "confirmed",
   "image_hint": "",
   "related_writing": "Implementing Women's Rights through CEDAW",
-  "related_slug": "implementing-womens-rights-through-cedaw-report-on-cedaw"
+  "related_slug": "implementing-womens-rights-through-cedaw-report-on-cedaw",
+  "link": {
+   "href": "writings/implementing-womens-rights-through-cedaw-report-on-cedaw.html",
+   "label": "Implementing Women's Rights through CEDAW"
+  }
  },
  {
   "year": 1985,
   "date": "1985",
   "title": "National Crafts Council of Bangladesh",
-  "text": "Inspired by the artist Qamrul Hasan, she helped found the National Crafts Council of Bangladesh and served as its secretary under his presidency. Her CV gives 1984 for its formation.",
+  "text": "Inspired by the artist Qamrul Hasan, she helped found the National Crafts Council of Bangladesh and served as its secretary under his presidency.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -564,7 +632,11 @@
   "confidence": "likely",
   "image_hint": "NCCB crafts exhibition or Qamrul Hasan's folk art",
   "related_writing": "Tribute to Patua Qamrul Hasan",
-  "related_slug": "tribute-to-patua-qamrul-hasan"
+  "related_slug": "tribute-to-patua-qamrul-hasan",
+  "link": {
+   "href": "writings/tribute-to-patua-qamrul-hasan.html",
+   "label": "Tribute to Patua Qamrul Hasan"
+  }
  },
  {
   "year": 1985,
@@ -578,13 +650,14 @@
   "confidence": "confirmed",
   "image_hint": "photo of the 1985 Nairobi conference/NGO Forum",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": null
  },
  {
   "year": 1986,
   "date": "1986",
   "title": "Ain o Salish Kendra founded",
-  "text": "With Salma Sobhan, Khursheed Erfan Ahmed, Amirul Islam, F.H. Abed and others she founded Ain o Salish Kendra (ASK), starting with mediation and legal aid for women and workers from a borrowed garage in Dhanmondi. She was its Director of Research and Advocacy until 2003. Her lecture says 'early 1980s' and her timeline notes say 1985.",
+  "text": "With Salma Sobhan, Khursheed Erfan Ahmed, Amirul Islam, F.H. Abed and others she founded Ain o Salish Kendra (ASK), starting with mediation and legal aid for women and workers from a borrowed garage in Dhanmondi. She was its Director of Research and Advocacy until 2003.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -593,13 +666,14 @@
   "image_hint": "ASK founders together, or early ASK office",
   "related_writing": "On Salma Sobhan – Recorded Remembrance",
   "image": "photo:meeting-1980s",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1987,
   "date": "1987",
   "title": "Study of garment workers",
-  "text": "She co-authored a study of women garment workers with Roushan Jahan and Salma Sobhan, published in 1990 as No Better Options? Industrial Women Workers in Bangladesh. The same year saw her pieces on artisan design and craft markets.",
+  "text": "She co-authored a study of women garment workers with Roushan Jahan and Salma Sobhan, published in 1990 as No Better Option? Industrial Women Workers in Bangladesh.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -607,7 +681,11 @@
   "confidence": "confirmed",
   "image_hint": "women garment workers, Dhaka, late 1980s",
   "related_writing": "No Better Options? Industrial Women Workers in Bangladesh",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#no-better-option",
+   "label": "No Better Option? (book)"
+  }
  },
  {
   "year": 1988,
@@ -622,7 +700,11 @@
   "image_hint": "book cover, The Company Weavers of Bengal",
   "related_writing": "The Company Weavers of Bengal",
   "related_slug": "",
-  "image": "cover:company-weavers-of-bengal"
+  "image": "cover:company-weavers-of-bengal",
+  "link": {
+   "href": "books.html#company-weavers-of-bengal",
+   "label": "The Company Weavers of Bengal (book)"
+  }
  },
  {
   "year": 1990,
@@ -636,7 +718,8 @@
   "confidence": "confirmed",
   "image_hint": "photo of 1990 anti-Ershad protests",
   "related_writing": "",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 1992,
@@ -650,7 +733,11 @@
   "confidence": "confirmed",
   "image_hint": "photo of the Gono Adalat, Suhrawardy Udyan 1992",
   "related_writing": "Foreword – Oral Histories of Women in 1971",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#rising-from-the-ashes",
+   "label": "Rising from the Ashes (book)"
+  }
  },
  {
   "year": 1993,
@@ -664,7 +751,11 @@
   "confidence": "confirmed",
   "image_hint": "",
   "related_writing": "Bringing Women's Lives to Order",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#claiming-our-rights",
+   "label": "Claiming Our Rights (book)"
+  }
  },
  {
   "year": 1995,
@@ -678,7 +769,11 @@
   "confidence": "confirmed",
   "image_hint": "photo of 1995 women's protest",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": {
+   "href": "writings/on-ayesha-khanam.html",
+   "label": "On Ayesha Khanam"
+  }
  },
  {
   "year": 1995,
@@ -692,13 +787,17 @@
   "confidence": "confirmed",
   "image_hint": "photo of the 1995 Beijing NGO Forum",
   "related_writing": "Herstory – Women's Initiatives for Peace and Coping with War",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "writings/herstory-womens-initiatives-for-peace-and-coping-with-war.html",
+   "label": "Herstory: Women's Initiatives for Peace"
+  }
  },
  {
   "year": 1996,
   "date": "1996",
   "title": "Editing ASK's human rights reports",
-  "text": "She began editing ASK's annual report, Human Rights in Bangladesh. Her résumé and bios say she edited it until 2006; her CV says 1996–2002.",
+  "text": "She began editing ASK's annual report, Human Rights in Bangladesh.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -707,13 +806,17 @@
   "image_hint": "cover of ASK annual report Human Rights in Bangladesh",
   "related_writing": "Bangladesh 2006 – A Human Rights Audit",
   "related_slug": "",
-  "image": "cover:ask-human-rights-in-bangladesh"
+  "image": "cover:ask-human-rights-in-bangladesh",
+  "link": {
+   "href": "writings/bangladesh-2006-a-human-rights-audit.html",
+   "label": "Bangladesh 2006: A Human Rights Audit"
+  }
  },
  {
   "year": 1997,
-  "date": "c. 1995–1997",
+  "date": "1990s",
   "title": "CEDAW shadow report taken to New York",
-  "text": "With Ayesha Khanam of the Mahila Parishad and others she drafted a shadow report and presented it to the CEDAW Committee in New York. Her tribute dates it 1995, but the Committee reviewed Bangladesh in 1997, so the exact year is uncertain.",
+  "text": "With Ayesha Khanam of the Mahila Parishad and others she drafted a shadow report and presented it to the CEDAW Committee in New York.",
   "strand": "work",
   "place": "New York",
   "connection": "",
@@ -721,7 +824,11 @@
   "confidence": "likely",
   "image_hint": "",
   "related_writing": "On Ayesha Khanam",
-  "related_slug": "on-ayesha-khanam"
+  "related_slug": "on-ayesha-khanam",
+  "link": {
+   "href": "writings/on-ayesha-khanam.html",
+   "label": "On Ayesha Khanam"
+  }
  },
  {
   "year": 1998,
@@ -735,7 +842,8 @@
   "confidence": "confirmed",
   "image_hint": "Herat landscape or Afghan women, late 1990s",
   "related_writing": "Impressions of Afghanistan",
-  "related_slug": ""
+  "related_slug": "",
+  "link": null
  },
  {
   "year": 2000,
@@ -749,7 +857,11 @@
   "confidence": "confirmed",
   "image_hint": "SAHR meeting photo",
   "related_writing": "In Memory of Asma Jahangir",
-  "related_slug": "in-memory-of-asma-jahangir"
+  "related_slug": "in-memory-of-asma-jahangir",
+  "link": {
+   "href": "writings/in-memory-of-asma-jahangir.html",
+   "label": "In Memory of Asma Jahangir"
+  }
  },
  {
   "year": 2000,
@@ -763,7 +875,11 @@
   "confidence": "confirmed",
   "image_hint": "photo of the 2000 Tokyo Women's Tribunal",
   "related_writing": "Herstory – Women's Initiatives for Peace and Coping with War",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "writings/herstory-womens-initiatives-for-peace-and-coping-with-war.html",
+   "label": "Herstory: Women's Initiatives for Peace"
+  }
  },
  {
   "year": 2001,
@@ -777,13 +893,17 @@
   "confidence": "confirmed",
   "image_hint": "Supreme Court of Bangladesh building",
   "related_writing": "Bringing Women's Lives to Order",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#claiming-our-rights",
+   "label": "Claiming Our Rights (book)"
+  }
  },
  {
   "year": 2001,
   "date": "2001",
   "title": "Narir Ekattor: women's voices of 1971",
-  "text": "ASK published oral histories of 22 women who lived through 1971, gathered by a team she worked with. The English translation, Rising from the Ashes, followed in 2013. Her timeline notes give 1997 for Narir Ekattor.",
+  "text": "ASK published oral histories of 22 women who lived through 1971, gathered by a team she worked with. The English translation, Rising from the Ashes, followed.",
   "strand": "work",
   "place": "Dhaka",
   "connection": "",
@@ -792,7 +912,11 @@
   "image_hint": "cover of Narir Ekattor / Rising from the Ashes",
   "related_writing": "Foreword – Oral Histories of Women in 1971",
   "related_slug": "",
-  "image": "cover:rising-from-the-ashes"
+  "image": "cover:rising-from-the-ashes",
+  "link": {
+   "href": "books.html#rising-from-the-ashes",
+   "label": "Rising from the Ashes (book)"
+  }
  },
  {
   "year": 2004,
@@ -806,7 +930,11 @@
   "confidence": "confirmed",
   "image_hint": "",
   "related_writing": "Implementing Women's Rights through CEDAW",
-  "related_slug": "implementing-womens-rights-through-cedaw-report-on-cedaw"
+  "related_slug": "implementing-womens-rights-through-cedaw-report-on-cedaw",
+  "link": {
+   "href": "writings/implementing-womens-rights-through-cedaw-report-on-cedaw.html",
+   "label": "Implementing Women's Rights through CEDAW"
+  }
  },
  {
   "year": 2005,
@@ -820,7 +948,11 @@
   "confidence": "confirmed",
   "image_hint": "",
   "related_writing": "Recollections of Kormojibi Nari",
-  "related_slug": "recollections-of-kormojibi-nari"
+  "related_slug": "recollections-of-kormojibi-nari",
+  "link": {
+   "href": "writings/recollections-of-kormojibi-nari.html",
+   "label": "Recollections of Kormojibi Nari"
+  }
  },
  {
   "year": 2008,
@@ -834,13 +966,17 @@
   "confidence": "confirmed",
   "image_hint": "HH at a SAHR meeting",
   "related_writing": "Welcome Address – SAHR Meeting, Kathmandu",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "writings/welcome-address-sahr-meeting-kathmandu.html",
+   "label": "Welcome Address, SAHR Meeting, Kathmandu"
+  }
  },
  {
   "year": 2009,
   "date": "May 2009",
   "title": "Sexual harassment guidelines",
-  "text": "The High Court issued binding guidelines against sexual harassment in workplaces and educational institutions. She dates them 1 May 2009; press reports give 14 May.",
+  "text": "The High Court issued binding guidelines against sexual harassment in workplaces and educational institutions.",
   "strand": "movement",
   "place": "Dhaka",
   "connection": "She cited the guidelines as an example of women's complaints leading to change.",
@@ -848,7 +984,8 @@
   "confidence": "likely",
   "image_hint": "",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": null
  },
  {
   "year": 2010,
@@ -863,7 +1000,11 @@
   "image_hint": "book cover",
   "related_writing": "Overcoming the Trauma of War",
   "related_slug": "",
-  "image": "cover:freedom-from-fear"
+  "image": "cover:freedom-from-fear",
+  "link": {
+   "href": "books.html#freedom-from-fear",
+   "label": "Freedom from Fear, Freedom from Want? (book)"
+  }
  },
  {
   "year": 2011,
@@ -877,7 +1018,11 @@
   "confidence": "confirmed",
   "image_hint": "Supreme Court of Bangladesh",
   "related_writing": "Bringing Women's Lives to Order",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#claiming-our-rights",
+   "label": "Claiming Our Rights (book)"
+  }
  },
  {
   "year": 2012,
@@ -891,7 +1036,11 @@
   "confidence": "confirmed",
   "image_hint": "memorial photo for Tazreen workers",
   "related_writing": "Justice for Workers Killed by Rana Plaza and Tazreen Garments",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "books.html#claiming-our-rights",
+   "label": "Claiming Our Rights (book)"
+  }
  },
  {
   "year": 2013,
@@ -905,7 +1054,11 @@
   "confidence": "confirmed",
   "image_hint": "Rana Plaza memorial or workers' human chain",
   "related_writing": "Rana Plaza – An International Tragedy",
-  "related_slug": ""
+  "related_slug": "",
+  "link": {
+   "href": "writings/garment-industry-workers-compensation-bn.html",
+   "label": "তৈরি পোশাকশিল্প: শ্রমিকদের ক্ষতিপূরণ কবে দেওয়া হবে?"
+  }
  },
  {
   "year": 2014,
@@ -919,7 +1072,11 @@
   "confidence": "confirmed",
   "image_hint": "workers' safety rally, Dhaka 2014",
   "related_writing": "It's Time to Pay Up",
-  "related_slug": "its-time-to-pay-up"
+  "related_slug": "its-time-to-pay-up",
+  "link": {
+   "href": "writings/its-time-to-pay-up.html",
+   "label": "It's Time to Pay Up"
+  }
  },
  {
   "year": 2016,
@@ -934,7 +1091,11 @@
   "image_hint": "book cover",
   "related_writing": "Bringing Women's Lives to Order – Challenging Impunity in the Community",
   "related_slug": "",
-  "image": "cover:of-the-nation-born"
+  "image": "cover:of-the-nation-born",
+  "link": {
+   "href": "books.html#of-the-nation-born",
+   "label": "Of the Nation Born (book)"
+  }
  },
  {
   "year": 2021,
@@ -949,7 +1110,11 @@
   "image_hint": "HH delivering the BDI lecture",
   "related_writing": "The Challenge of Citizenship in Building a Just Society",
   "image": "photo:portrait",
-  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi"
+  "related_slug": "the-challenge-of-citizenship-in-building-a-just-society-bdi",
+  "link": {
+   "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html",
+   "label": "The Challenge of Citizenship in Building a Just Society"
+  }
  },
  {
   "year": 2023,
@@ -964,6 +1129,10 @@
   "image_hint": "book cover, Claiming Our Rights",
   "related_writing": "Claiming Our Rights",
   "related_slug": "",
-  "image": "cover:claiming-our-rights"
+  "image": "cover:claiming-our-rights",
+  "link": {
+   "href": "books.html#claiming-our-rights",
+   "label": "Claiming Our Rights (book)"
+  }
  }
 ]

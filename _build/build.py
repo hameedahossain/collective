@@ -426,7 +426,7 @@ def book_links(b, cls="btn"):
 
 feat = books[0]
 shelf = []
-for i, b in enumerate(books[1:], 1):
+for i, b in enumerate(books):
     role = b["role"] + (" · " + b["role_detail"].split("(")[1].rstrip(")") if b["role"] == "Contributor" and "(" in b["role_detail"] else "")
     shelf.append(f"""<article class="book" id="{E(b['key'])}">
   {book_cover(b, i)}
@@ -440,19 +440,7 @@ for i, b in enumerate(books[1:], 1):
   </div>
 </article>""")
 body = head("Books", "Her books, the volumes she edited, and books that carry her chapters and forewords. The texts are not reproduced here; follow the links to buy a copy or find one in a library.") + f"""
-<section class="section"><div class="wrap">
-  <div class="feature">
-    {book_cover(feat, 0)}
-    <div>
-      <p class="book-role">Her collected essays · {E(feat['year'])}</p>
-      <h2 class="feature-title">{E(feat['title'])}</h2>
-      <p class="lede">{E(feat['description'])}</p>
-      <p class="book-pub">{E(feat['publisher'])}{' · ISBN ' + E(feat['isbn']) if feat.get('isbn') else ''}</p>
-      <div class="hero-actions">{book_links(feat)}</div>
-    </div>
-  </div>
-</div></section>
-<section class="section" id="more"><div class="wrap"><div class="shelf">{''.join(shelf)}</div></div></section>"""
+<section class="section"><div class="wrap"><div class="shelf">{''.join(shelf)}</div></div></section>"""
 page("books.html", "Books", body, active="books.html", description="Books by and with Hameeda Hossain, with links to buy or borrow.",
      og_image=covers.get(feat["key"]))
 
@@ -489,9 +477,9 @@ for ev in timeline:
         tl_items.append(f'<li class="tl-decade" id="d{dec[:4]}" data-decade-marker="{dec}"><span>{dec}</span></li>')
         last_dec = dec
     img = image_for(ev.get("image"))
-    rel = ev.get("related_writing") or ""
-    rel_slug = ev.get("related_slug") or title_to_slug.get(rel.lower())
-    rel_html = f'<a class="tl-link" href="writings/{rel_slug}.html">Read: {E(by_slug[rel_slug]["title"])} →</a>' if rel_slug in by_slug else ""
+    lk = ev.get("link")
+    rel_html = (f'<a class="tl-link" href="{E(lk["href"])}"{langattr(lk["label"])}>{"See" if lk["href"].startswith("photos") else "Read more"}: {E(lk["label"])} →</a>'
+                if lk and ((lk["href"].startswith("writings/") and lk["href"][9:-5] in by_slug) or lk["href"].startswith(("books.html", "photos.html"))) else "")
     img_html = (f'<button type="button" class="tl-img g-open" data-full="{E(img["src"])}" data-caption="{E(img["alt"] + (" · " + img["credit"] if img.get("credit") else ""))}"><img src="{E(img["thumb"])}" alt="{E(img["alt"])}" loading="lazy"></button>' if img else "")
     tl_items.append(f'''<li class="tl-event s-{E(ev["strand"])}{' has-img' if img else ''}{' has-cover' if img and img.get('cover') else ''}" data-item data-strand="{E(ev["strand"])}">
   <div class="tl-card">
