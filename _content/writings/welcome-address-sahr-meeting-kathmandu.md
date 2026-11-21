@@ -10,7 +10,7 @@ source_status: "dated from internal evidence (ten years after the 2000 Neemrana 
 theme: "Speeches, Talks & Lectures"
 type: "speech/address"
 language: "English"
-summary: "HH's welcome address to an SAHR members' meeting, ten years after the Neemrana declaration. It surveys threats to peace and rights in South Asia: India-Pakistan hostility, militancy, drone strikes, abuses under anti-terror laws, discrimination against minorities, and displacement in Sri Lanka, Baluchistan and the Chittagong Hill Tracts. It outlines SAHR's studies, its parliament watch, and its call for citizens' peace dialogues."
+summary: "Dr. Hossain's welcome address to an SAHR members' meeting, ten years after the Neemrana declaration. It surveys threats to peace and rights in South Asia: India-Pakistan hostility, militancy, drone strikes, abuses under anti-terror laws, discrimination against minorities, and displacement in Sri Lanka, Baluchistan and the Chittagong Hill Tracts. It outlines SAHR's studies, its parliament watch, and its call for citizens' peace dialogues."
 pull_quote: "It is time for citizens to start their dialogues for peace."
 translator: ""
 author_note: ""
