@@ -161,7 +161,6 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
 <link rel="stylesheet" href="{up}assets/site.css?v={ver('assets/site.css')}">
-<script>try{{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}}catch(e){{}}</script>
 {extra_head}
 </head>
 <body>
@@ -170,7 +169,7 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
   <div class="wrap">
     <a class="brand" href="{up}index.html"><span class="brand-name">Hameeda Hossain</span></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main">{nav}<button class="theme-toggle" type="button">Dark</button></nav>
+    <nav class="nav" id="site-nav" aria-label="Main">{nav}</nav>
   </div>
 </header>
 <main id="main">

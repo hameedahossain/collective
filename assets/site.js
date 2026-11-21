@@ -6,19 +6,6 @@
   // open the credits panel when linked to directly
   if (location.hash === '#credits') { var cr = document.getElementById('credits'); if (cr) cr.open = true; }
 
-  // ── theme toggle (remembered per browser) ──
-  function stored() { try { return localStorage.getItem('hh-theme'); } catch (e) { return null; } }
-  function store(v) { try { localStorage.setItem('hh-theme', v); } catch (e) {} }
-  var t = stored();
-  if (t === 'light' || t === 'dark') root.setAttribute('data-theme', t);
-  var tb = document.querySelector('.theme-toggle');
-  function isDark() {
-    var a = root.getAttribute('data-theme');
-    return a === 'dark' || (!a && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
-  }
-  function label() { if (tb) { var d = isDark(); tb.textContent = d ? 'Light' : 'Dark'; tb.setAttribute('aria-label', d ? 'Switch to light mode' : 'Switch to dark mode'); } }
-  if (tb) { label(); tb.addEventListener('click', function () { var n = isDark() ? 'light' : 'dark'; root.setAttribute('data-theme', n); store(n); label(); }); }
-
   // ── mobile nav ──
   var nt = document.querySelector('.nav-toggle'), nav = document.getElementById('site-nav');
   if (nt && nav) nt.addEventListener('click', function () { var o = nav.classList.toggle('open'); nt.setAttribute('aria-expanded', o ? 'true' : 'false'); });
