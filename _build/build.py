@@ -131,6 +131,13 @@ NAV = [("writings.html", "Writings"), ("timeline.html", "Life"), ("articles.html
        ("books.html", "Books"), ("photos.html", "Photographs"), ("about.html", "About")]
 
 
+import hashlib
+
+
+def ver(rel):
+    return hashlib.md5((ROOT / rel).read_bytes()).hexdigest()[:8]
+
+
 def page(path, title, body, active="", description="", og_image=None, extra_head=""):
     up = "../" * path.count("/")
     full_title = f"{title} — Hameeda Hossain" if title else "Hameeda Hossain"
@@ -153,7 +160,7 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
-<link rel="stylesheet" href="{up}assets/site.css">
+<link rel="stylesheet" href="{up}assets/site.css?v={ver('assets/site.css')}">
 <script>try{{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}}catch(e){{}}</script>
 {extra_head}
 </head>
@@ -182,7 +189,7 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
   </div>
 </footer>
 <div class="lightbox" hidden><button class="lb-close" type="button" aria-label="Close">×</button><figure><img alt=""><figcaption></figcaption></figure></div>
-<script src="{up}assets/site.js" defer></script>
+<script src="{up}assets/site.js?v={ver('assets/site.js')}" defer></script>
 </body>
 </html>
 """
@@ -627,6 +634,51 @@ body = f"""
   <div class="mini-shelf">{cover_row}</div>
 </div></section>"""
 page("index.html", "", body, description="")
+
+
+# ── Connections (demo; unlisted) ───────────────────────────────────────────
+people = load("people.json", [])
+if people:
+    GROUPS = [("family", "Family", "#e29aa7"), ("forum-and-friends", "Forum & friends", "#d2b07a"),
+              ("ask-and-rights", "ASK & human rights", "#7fb7bb"), ("movement", "Women's movement", "#e2a861"),
+              ("crafts", "Crafts", "#9fc28a"), ("scholarship", "Scholarship", "#a9a2c4"), ("co-authors", "Co-authors & editors", "#8fb0e0")]
+    present = [g for g in GROUPS if any(p["group"] == g[0] for p in people)]
+    valid = lambda h: (h.startswith("writings/") and h[9:-5] in by_slug) or h.startswith(("books.html", "timeline.html", "photos.html"))
+    for p in people:
+        p["works"] = [w for w in p.get("works", []) if valid(w["href"])]
+        p["links"] = [l for l in p.get("links", []) if l.get("verified", True)]
+    payload = json.dumps({"groups": [{"key": k, "label": l, "color": c} for k, l, c in present],
+                          "people": [{k: p.get(k) for k in ("id", "name", "group", "role", "connection", "works", "links", "related", "years")} for p in people]},
+                         ensure_ascii=False).replace("</", "<\\/")
+    gchips = "".join(f'<button class="chip" type="button" data-cx-group="{k}" aria-pressed="false"><span class="sw" style="--gc:{c}"></span>{E(l)}</button>' for k, l, c in present)
+    lists = ""
+    for k, l, c in present:
+        items = "".join(f'<li class="cx-person"><a href="#{E(p["id"])}" data-open="{E(p["id"])}"><span class="nm">{E(p["name"])}</span><span class="rl">{E(p["role"])}</span></a></li>' for p in people if p["group"] == k)
+        lists += f'<section class="cx-group-list"><h3 style="--gc:{c}"><span class="sw"></span>{E(l)}</h3><ul class="cx-people">{items}</ul></section>'
+    body = f"""
+<section class="cx-hero"><div class="wrap">
+  <span class="demo">Demo</span>
+  <h1 class="page-title">Her circle</h1>
+  <p class="lede">The people Dr. Hossain has lived and worked alongside: family, friends, colleagues, co-founders and co-authors. Choose a person to see how they are connected, the work they shared, and where to read more about them.</p>
+</div></section>
+<section class="cx-wrap"><div class="wrap">
+  <div class="cx-tools">
+    <div class="chips"><button class="chip" type="button" data-cx-group="all" aria-pressed="true">Everyone</button>{gchips}</div>
+    <label class="search"><span class="sr-only">Find a person</span>{SEARCH_ICON}<input type="search" data-cx-search placeholder="Find a person…"></label>
+  </div>
+  <div class="cx-layout">
+    <div class="cx-stage" role="group" aria-label="Map of people connected to Hameeda Hossain">
+      <svg viewBox="0 0 1000 1000" aria-hidden="true"></svg>
+      <div class="cx-core" aria-hidden="true"><span class="core-name">Hameeda Hossain</span><span class="core-sub">{len(people)} people · {len(present)} circles of work and life</span></div>
+      <div class="cx-nodes"></div>
+    </div>
+    <aside class="cx-panel" aria-live="polite"><p class="cx-panel-empty"><strong>Choose a person</strong>Hover over a name to see their links, or click to read how they are connected to Dr. Hossain.</p></aside>
+  </div>
+</div></section>
+<section class="cx-all"><div class="wrap"><h2 class="section-title">Everyone on the map</h2>{lists}</div></section>
+<script type="application/json" id="people-data">{payload}</script>
+<script src="assets/connections.js?v={ver('assets/connections.js')}" defer></script>"""
+    page("connections.html", "Her circle", body, active="", description="The people connected to Hameeda Hossain: family, friends, colleagues and collaborators.")
 
 page("404.html", "Page not found", head("This page isn't here", "It may have moved. Try the <a href='/collective/writings.html'>writings</a> or the <a href='/collective/'>home page</a>."))
 print(f"Built {len(writings)} writings, {len(articles)} articles, {len(interviews)} interviews, {len(books)} books, {len(photos)} photos, {len(timeline)} timeline events; "
