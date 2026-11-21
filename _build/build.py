@@ -127,7 +127,7 @@ by_slug = {w["slug"]: w for w in writings}
 
 
 # ── Layout ──────────────────────────────────────────────────────────────────
-NAV = [("writings.html", "Writings"), ("timeline.html", "Life"), ("articles.html", "Articles"), ("interviews.html", "Interviews"),
+NAV = [("writings.html", "Writings"), ("timeline.html", "Life"), ("connections.html", "Her circle"), ("articles.html", "Articles"), ("interviews.html", "Interviews"),
        ("books.html", "Books"), ("photos.html", "Photographs"), ("about.html", "About")]
 
 
@@ -183,7 +183,7 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
         <p class="foot-name">Hameeda Hossain <span lang="bn">হামিদা হোসেন</span></p>
         <p class="muted">Writings are reproduced for study and remembrance; each page credits where a piece first appeared. Photographs are from her personal archive.</p>
       </div>
-      <ul><li><a href="{up}writings.html">Writings</a></li><li><a href="{up}timeline.html">Life &amp; times</a></li><li><a href="{up}articles.html">Newspaper articles</a></li><li><a href="{up}interviews.html">Interviews</a></li></ul>
+      <ul><li><a href="{up}writings.html">Writings</a></li><li><a href="{up}timeline.html">Life &amp; times</a></li><li><a href="{up}connections.html">Her circle</a></li><li><a href="{up}articles.html">Newspaper articles</a></li><li><a href="{up}interviews.html">Interviews</a></li></ul>
       <ul><li><a href="{up}books.html">Books</a></li><li><a href="{up}videos.html">Video &amp; audio</a></li><li><a href="{up}magazines.html">Magazines</a></li><li><a href="{up}photos.html">Photographs</a></li><li><a href="{up}about.html">About</a></li></ul>
     </div>
   </div>
@@ -657,7 +657,6 @@ if people:
         lists += f'<section class="cx-group-list"><h3 style="--gc:{c}"><span class="sw"></span>{E(l)}</h3><ul class="cx-people">{items}</ul></section>'
     body = f"""
 <section class="cx-hero"><div class="wrap">
-  <span class="demo">Demo</span>
   <h1 class="page-title">Her circle</h1>
   <p class="lede">The people Dr. Hossain has lived and worked alongside: family, friends, colleagues, co-founders and co-authors. Choose a person to see how they are connected, the work they shared, and where to read more about them.</p>
 </div></section>
@@ -678,7 +677,7 @@ if people:
 <section class="cx-all"><div class="wrap"><h2 class="section-title">Everyone on the map</h2>{lists}</div></section>
 <script type="application/json" id="people-data">{payload}</script>
 <script src="assets/connections.js?v={ver('assets/connections.js')}" defer></script>"""
-    page("connections.html", "Her circle", body, active="", description="The people connected to Hameeda Hossain: family, friends, colleagues and collaborators.")
+    page("connections.html", "Her circle", body, active="connections.html", description="The people connected to Hameeda Hossain: family, friends, colleagues and collaborators.")
 
 page("404.html", "Page not found", head("This page isn't here", "It may have moved. Try the <a href='/collective/writings.html'>writings</a> or the <a href='/collective/'>home page</a>."))
 print(f"Built {len(writings)} writings, {len(articles)} articles, {len(interviews)} interviews, {len(books)} books, {len(photos)} photos, {len(timeline)} timeline events; "
