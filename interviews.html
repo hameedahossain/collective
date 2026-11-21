@@ -1,227 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interviews — Hameeda Hossain</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interviews — Hameeda Hossain Collective</title>
+<meta name="description" content="Interviews with Hameeda Hossain in print, audio and video.">
+<meta property="og:title" content="Interviews">
+<meta property="og:description" content="Interviews with Hameeda Hossain in print, audio and video.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://res.cloudinary.com/dbuakj5dr/image/upload/v1782515537/portrait_n3u8aw.jpg">
+<link rel="canonical" href="https://hameedahossain.github.io/collective/interviews.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
-  <ul class="nav-links">
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="interviews.html" class="active">Interviews</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="magazines.html">Magazines</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="photos.html">Photos</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
-    </svg>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="articles.html" onclick="closeMenu()">Articles</a>
-  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
-  <a href="writings.html" onclick="closeMenu()">Writings</a>
-  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
-  <a href="archives.html" onclick="closeMenu()">Archives</a>
-  <a href="photos.html" onclick="closeMenu()">Photos</a>
-  <a href="about.html" onclick="closeMenu()">About</a>
-</div>
-
-<div class="page-header">
-  <a href="index.html" class="back-link">← Back to home</a>
-  <p class="page-header-eyebrow">The Collection</p>
-  <h1>Interviews</h1>
-  <p class="page-header-desc">Conversations with journalists, academics, and media — her voice in dialogue with her times. Text, audio, and video interviews.</p>
-</div>
-
-<div class="filter-bar">
-  <button class="filter-btn active" onclick="filter(this,'all')">All</button>
-  <button class="filter-btn" onclick="filter(this,'1970s')">1970s</button>
-  <button class="filter-btn" onclick="filter(this,'1980s')">1980s</button>
-  <button class="filter-btn" onclick="filter(this,'1990s')">1990s</button>
-  <button class="filter-btn" onclick="filter(this,'2000s')">2000s</button>
-  <button class="filter-btn" onclick="filter(this,'2010s')">2010s</button>
-  <button class="filter-btn" onclick="filter(this,'2020s')">2020s</button>
-  <button class="filter-btn" onclick="filter(this,'Text')">Text</button>
-  <button class="filter-btn" onclick="filter(this,'Audio')">Audio</button>
-  <button class="filter-btn" onclick="filter(this,'Video')">Video</button>
-</div>
-
-<div class="content-area">
-  <div class="item-list" id="itemList">
-<a href="https://www.youtube.com/watch?v=atnunRcF-do" 
-   class="item" data-decade="2000s" data-type="Video"
-   target="_blank" rel="noopener">
-  <span class="item-year">2012</span>
-  <div class="item-content">
-    <div class="item-title">Life in Hyderabad, Sindh During 1947</div>
-    <div class="item-source">1947 Partition Archives · Interviewed by Farhana Afroz · Date February 2012</div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-name">Hameeda Hossain</span><span class="brand-sub">The Collective</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main"><a href="writings.html">Writings</a><a href="articles.html">Articles</a><a href="interviews.html" aria-current="page">Interviews</a><a href="books.html">Books</a><a href="magazines.html">Magazines</a><a href="videos.html">Media</a><a href="about.html">About</a><button class="theme-toggle" type="button">Dark</button></nav>
   </div>
-  <span class="item-tag">Video</span>
-</a>
-    <!--
-    HOW TO ADD AN INTERVIEW:
-    For text/PDF: upload to interviews/ folder and set href="interviews/your-file.pdf"
-    For audio: upload MP3 to interviews/ folder and set href="interviews/your-file.mp3"
-    For video: set href to the YouTube or Vimeo URL directly
-    Set data-decade AND data-type so both sets of filters work.
-
-    <a href="interviews/your-file.pdf" class="item" data-decade="1990s" data-type="Text">
-      <span class="item-year">1996</span>
-      <div class="item-content">
-        <div class="item-title">On women's rights in Bangladesh</div>
-        <div class="item-source">The Daily Star · Conducted by Journalist Name</div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><p class="eyebrow">Interviews</p><h1 class="page-title">Interviews &amp; conversations</h1><p class="lede">Conversations with journalists, scholars and oral-history projects — in print, on air and online.</p></div></section>
+<div class="wrap">
+  <div class="toolbar">
+    <label class="search"><span class="sr-only">Search interviews</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" data-search placeholder="Search interviews…"></label>
+    <div class="chips"><span class="label">Format</span><button class="chip" type="button" data-filter="medium" data-value="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="medium" data-value="audio" aria-pressed="false">Audio</button><button class="chip" type="button" data-filter="medium" data-value="online" aria-pressed="false">Online</button><button class="chip" type="button" data-filter="medium" data-value="text" aria-pressed="false">Text</button><button class="chip" type="button" data-filter="medium" data-value="video" aria-pressed="false">Video</button></div>
+    <div class="chips"><span class="label">Language</span><button class="chip" type="button" data-filter="lang" data-value="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="lang" data-value="en" aria-pressed="false">English</button><button class="chip" type="button" data-filter="lang" data-value="bn" aria-pressed="false">বাংলা</button></div>
+  </div>
+  <p class="result-count" data-count aria-live="polite"></p>
+  <ul class="list" data-filter-list><li data-item data-decade="2020s" data-lang="en" data-medium="online" data-text="bangladesh at 50: women’s empowerment: from home to factory and beyond mittal south asia institute · marty chen, harvard kennedy school · 2021">
+  <a class="row" href="https://mittalsouthasiainstitute.harvard.edu/wp-content/uploads/2021/04/Conference-2_Womens-Empowerment3.pdf" rel="noopener" target="_blank">
+    <span class="row-year">2021</span>
+    <span><span class="row-title">Bangladesh at 50: Women’s Empowerment: From Home to Factory and Beyond</span><span class="row-src" style="display:block">Mittal South Asia Institute · Marty Chen, Harvard Kennedy School · 2021</span></span>
+    <span class="row-tags"><span class="tag plain">Online ↗</span></span>
+  </a></li><li data-item data-decade="2020s" data-lang="bn" data-medium="video" data-text="বেলা অবেলা সারাবেলা desh tv · interviewed by asaduzzaman noor · november 21, 2021">
+  <a class="row" href="https://www.youtube.com/watch?v=Cgoizwmc2Yc" rel="noopener" target="_blank">
+    <span class="row-year">2021</span>
+    <span><span class="row-title" lang="bn">বেলা অবেলা সারাবেলা</span><span class="row-src" style="display:block">Desh TV · Interviewed by Asaduzzaman Noor · November 21, 2021</span></span>
+    <span class="row-tags"><span class="tag plain">Video ↗</span></span>
+  </a></li><li data-item data-decade="2020s" data-lang="en" data-medium="text" data-text="we still have a lot more to do the daily star · interviewed by shuprova tasneem · 2021">
+  <a class="row" href="interviews/Daily Star-May 6 2021-lot more to do for equality.pdf">
+    <span class="row-year">2021</span>
+    <span><span class="row-title">We still have a lot more to do</span><span class="row-src" style="display:block">The Daily Star · Interviewed by Shuprova Tasneem · 2021</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li><li data-item data-decade="2020s" data-lang="en" data-medium="online" data-text="a conversation with dr hameeda hossain bdi development newsletter, vol. 3 no. 2 · interviewed by munir quddus · december 26, 2021">
+  <a class="row" href="https://bdiusa.org/wp-content/uploads/2022/04/The-BDI-Development-Newsletter-Volume-3-Number-2-Fall-2021-.pdf" rel="noopener" target="_blank">
+    <span class="row-year">2021</span>
+    <span><span class="row-title">A Conversation with Dr Hameeda Hossain</span><span class="row-src" style="display:block">BDI Development Newsletter, Vol. 3 No. 2 · Interviewed by Munir Quddus · December 26, 2021</span></span>
+    <span class="row-tags"><span class="tag plain">Online ↗</span></span>
+  </a></li><li data-item data-decade="2020s" data-lang="en" data-medium="online" data-text="an equal world is an enabled world the daily star · interviewed by mehrin mubdi chowdhury · march 3, 2020">
+  <a class="row" href="https://www.thedailystar.net/lifestyle/interview/news/equal-world-enabled-world-1875361" rel="noopener" target="_blank">
+    <span class="row-year">2020</span>
+    <span><span class="row-title">An Equal World Is an Enabled World</span><span class="row-src" style="display:block">The Daily Star · Interviewed by Mehrin Mubdi Chowdhury · March 3, 2020</span></span>
+    <span class="row-tags"><span class="tag plain">Online ↗</span></span>
+  </a></li><li data-item data-decade="2010s" data-lang="bn" data-medium="text" data-text="মানবাধিকার প্রতিষ্ঠার এক অভিযাত্রা the daily ittefaq · written by sarbina simi · 2017">
+  <a class="row" href="interviews/Ittefaq-29 Nov 2017-manobdhikar protishtar ek obhijatra.pdf">
+    <span class="row-year">2017</span>
+    <span><span class="row-title" lang="bn">মানবাধিকার প্রতিষ্ঠার এক অভিযাত্রা</span><span class="row-src" style="display:block">The Daily Ittefaq · Written by Sarbina Simi · 2017</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="video" data-text="life in hyderabad, sindh during 1947 1947 partition archives · interviewed by farhana afroz · date february 2012">
+  <a class="row" href="https://www.youtube.com/watch?v=atnunRcF-do" rel="noopener" target="_blank">
+    <span class="row-year">2012</span>
+    <span><span class="row-title">Life in Hyderabad, Sindh During 1947</span><span class="row-src" style="display:block">1947 Partition Archives · Interviewed by Farhana Afroz · Date February 2012</span></span>
+    <span class="row-tags"><span class="tag plain">Video ↗</span></span>
+  </a></li><li data-item data-decade="2010s" data-lang="en" data-medium="audio" data-text="bengali intellectuals oral history project: interview with hameeda hossain tufts university · interviewed by iftekhar iqbal · january 20, 2011">
+  <a class="row" href="https://web.archive.org/web/20240723122158oe_/https://dl.tufts.edu/downloads/f1882159p?file=mp3" rel="noopener" target="_blank">
+    <span class="row-year">2011</span>
+    <span><span class="row-title">Bengali Intellectuals Oral History Project: Interview with Hameeda Hossain</span><span class="row-src" style="display:block">Tufts University · Interviewed by Iftekhar Iqbal · January 20, 2011</span></span>
+    <span class="row-tags"><span class="tag plain">Audio ↗</span></span>
+  </a></li><li data-item data-decade="2010s" data-lang="en" data-medium="video" data-text="women speak on secularism secularism is a women&#x27;s issue (siawi) · conducted by marieme helie lucas · april 2011">
+  <a class="row" href="https://www.youtube.com/watch?v=9wArB1Po-FY" rel="noopener" target="_blank">
+    <span class="row-year">2011</span>
+    <span><span class="row-title">Women Speak on Secularism</span><span class="row-src" style="display:block">Secularism Is A Women&#x27;s Issue (SIAWI) · Conducted by Marieme Helie Lucas · April 2011</span></span>
+    <span class="row-tags"><span class="tag plain">Video ↗</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="bn" data-medium="text" data-text="মুক্তিযুদ্ধের অপূর্ণ প্রত্যাশা prothom alo · discussion feature · 2009">
+  <a class="row" href="interviews/Prothom Alo 26 March 2009- muktijoddher opurno prottasha.pdf">
+    <span class="row-year">2009</span>
+    <span><span class="row-title" lang="bn">মুক্তিযুদ্ধের অপূর্ণ প্রত্যাশা</span><span class="row-src" style="display:block">Prothom Alo · Discussion Feature · 2009</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="bn" data-medium="text" data-text="হামিদা হোসেনের মিশন: মানুষের কল্যাণে আইন prothom alo · written by jahid hossain · 2004">
+  <a class="row" href="interviews/Chutir Din Prothom Alo - 18 September 2004 - .pdf">
+    <span class="row-year">2004</span>
+    <span><span class="row-title" lang="bn">হামিদা হোসেনের মিশন: মানুষের কল্যাণে আইন</span><span class="row-src" style="display:block">Prothom Alo · Written by Jahid Hossain · 2004</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li><li data-item data-decade="1990s" data-lang="bn" data-medium="text" data-text="বছরের আলোচিত নারী প্রকৃতি · written by শাহনাজ মুনী &amp; রাজীব নূর · 1998">
+  <a class="row" href="interviews/Prokriti 15 january 1998.pdf">
+    <span class="row-year">1998</span>
+    <span><span class="row-title" lang="bn">বছরের আলোচিত নারী</span><span class="row-src" style="display:block">প্রকৃতি · Written by শাহনাজ মুনী &amp; রাজীব নূর · 1998</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li><li data-item data-decade="1990s" data-lang="en" data-medium="text" data-text="interview: hameeda hossain of ask women in action · interviewed by luz maria martinez · 1994">
+  <a class="row" href="interviews/1994-ISIS international Women in Action.pdf">
+    <span class="row-year">1994</span>
+    <span><span class="row-title">Interview: Hameeda Hossain of ASK</span><span class="row-src" style="display:block">Women in Action · Interviewed by Luz Maria Martinez · 1994</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li><li data-item data-decade="TODO" data-lang="en" data-medium="text" data-text="bangladesh: an educated approach to women’s and children’s problems interview by zofeen t. ebrahim">
+  <a class="row" href="interviews/INTERVIEW BY ZOFEEN T. EBRAHIM.pdf">
+    <span class="row-year">—</span>
+    <span><span class="row-title">Bangladesh: an educated approach to women’s and children’s problems</span><span class="row-src" style="display:block">Interview by Zofeen T. Ebrahim</span></span>
+    <span class="row-tags"><span class="tag plain">Text</span></span>
+  </a></li></ul>
+  <p class="empty" data-empty>Nothing matches.</p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>The Collective</h2>
+        <p>An archive of the writings, interviews and public life of Hameeda Hossain — historian, writer and human rights defender.</p>
+        <p class="muted">Writings are reproduced for study and remembrance. Where a piece first appeared elsewhere, the original publication is credited and linked on its page.</p>
       </div>
-      <span class="item-tag">Text</span>
-    </a>
-    -->
-   
-    <a href="https://mittalsouthasiainstitute.harvard.edu/wp-content/uploads/2021/04/Conference-2_Womens-Empowerment3.pdf"
-   class="item" data-decade="2020s" data-type="Text"
-   target="_blank" rel="noopener">
-  <span class="item-year">2021</span>
-  <div class="item-content">
-    <div class="item-title">Bangladesh at 50: Women’s Empowerment: From Home to Factory and Beyond</div>
-    <div class="item-source">Mittal South Asia Institute · Marty Chen, Harvard Kennedy School · 2021</div>
+      <div>
+        <h2>Read</h2>
+        <ul><li><a href="writings.html">Writings</a></li><li><a href="articles.html">Newspaper articles</a></li><li><a href="interviews.html">Interviews</a></li><li><a href="books.html">Books</a></li></ul>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="magazines.html">Magazines</a></li><li><a href="videos.html">Media</a></li><li><a href="photos.html">Photographs</a></li><li><a href="archives.html">Archives</a></li><li><a href="about.html">About</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-base"><span>Hameeda Hossain Collective</span><span>হামিদা হোসেন</span></div>
   </div>
-  <span class="item-tag">Online</span>
-</a>
-
-    <a href="https://web.archive.org/web/20240723122158oe_/https://dl.tufts.edu/downloads/f1882159p?file=mp3"
-   class="item" data-decade="2010s" data-type="Audio"
-   target="_blank" rel="noopener">
-  <span class="item-year">2011</span>
-  <div class="item-content">
-    <div class="item-title">Bengali Intellectuals Oral History Project: Interview with Hameeda Hossain</div>
-    <div class="item-source">Tufts University · Interviewed by Iftekhar Iqbal · January 20, 2011</div>
-  </div>
-  <span class="item-tag">Audio</span>
-</a>
-    
-<a href="https://www.youtube.com/watch?v=9wArB1Po-FY"
-   class="item" data-decade="2010s" data-type="Video"
-   target="_blank" rel="noopener">
-  <span class="item-year">2011</span>
-  <div class="item-content">
-    <div class="item-title">Women Speak on Secularism</div>
-    <div class="item-source">Secularism Is A Women's Issue (SIAWI) · Conducted by Marieme Helie Lucas · April 2011</div>
-  </div>
-  <span class="item-tag">Video</span>
-</a>
-
-<a href="https://www.youtube.com/watch?v=Cgoizwmc2Yc"
-   class="item" data-decade="2020s" data-type="Video"
-   target="_blank" rel="noopener">
-  <span class="item-year">2021</span>
-  <div class="item-content">
-    <div class="item-title">বেলা অবেলা সারাবেলা</div>
-    <div class="item-source">Desh TV · Interviewed by Asaduzzaman Noor · November 21, 2021</div>
-  </div>
-  <span class="item-tag">Video</span>
-</a>
-<a href="interviews/1994-ISIS international Women in Action.pdf"
-   class="item" data-decade="1990s" data-type="Text">
-  <span class="item-year">1994</span>
-  <div class="item-content">
-    <div class="item-title">Interview: Hameeda Hossain of ASK</div>
-    <div class="item-source">Women in Action · Interviewed by Luz Maria Martinez · 1994</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-
-<a href="interviews/Prokriti 15 january 1998.pdf"
-   class="item" data-decade="1990s" data-type="Text">
-  <span class="item-year">1998</span>
-  <div class="item-content">
-    <div class="item-title">বছরের আলোচিত নারী</div>
-    <div class="item-source">প্রকৃতি · Written by শাহনাজ মুনী &amp; রাজীব নূর · 1998</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-
-<a href="interviews/Chutir Din Prothom Alo - 18 September 2004 - .pdf"
-   class="item" data-decade="2000s" data-type="Text">
-  <span class="item-year">2004</span>
-  <div class="item-content">
-    <div class="item-title">হামিদা হোসেনের মিশন: মানুষের কল্যাণে আইন</div>
-    <div class="item-source">Prothom Alo · Written by Jahid Hossain · 2004</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-
-<a href="interviews/INTERVIEW BY ZOFEEN T. EBRAHIM.pdf"
-   class="item" data-decade="TODO" data-type="Text">
-  <span class="item-year">TODO</span>
-  <div class="item-content">
-    <div class="item-title">Bangladesh: an educated approach to women’s and children’s problems</div>
-    <div class="item-source">Interview by Zofeen T. Ebrahim · TODO Year</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-
-<a href="interviews/Prothom Alo 26 March 2009- muktijoddher opurno prottasha.pdf"
-   class="item" data-decade="2000s" data-type="Text">
-  <span class="item-year">2009</span>
-  <div class="item-content">
-    <div class="item-title">মুক্তিযুদ্ধের অপূর্ণ প্রত্যাশা</div>
-    <div class="item-source">Prothom Alo · Discussion Feature · 2009</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-
-<a href="interviews/Daily Star-May 6 2021-lot more to do for equality.pdf"
-   class="item" data-decade="2020s" data-type="Text">
-  <span class="item-year">2021</span>
-  <div class="item-content">
-    <div class="item-title">We still have a lot more to do</div>
-    <div class="item-source">The Daily Star · Interviewed by Shuprova Tasneem · 2021</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-
-<a href="interviews/Ittefaq-29 Nov 2017-manobdhikar protishtar ek obhijatra.pdf"
-   class="item" data-decade="2010s" data-type="Text">
-  <span class="item-year">2017</span>
-  <div class="item-content">
-    <div class="item-title">মানবাধিকার প্রতিষ্ঠার এক অভিযাত্রা</div>
-    <div class="item-source">The Daily Ittefaq · Written by Sarbina Simi · 2017</div>
-  </div>
-  <span class="item-tag">Text</span>
-</a>
-  </div>
-
-  <div class="upload-hint">
-    <strong>To add an interview:</strong> For text or audio, upload to the <code>interviews/</code> folder. For video, paste the YouTube link into href. Set both <code>data-decade</code> and <code>data-type</code> on each item so both filter rows work correctly.
-  </div>
-</div>
-
-<footer>
-  <span class="footer-name">Hameeda Hossain — Collective</span>
-  <span class="footer-note">Hosted free on GitHub Pages</span>
 </footer>
-
-<script>
-  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
-
-  function filter(btn, value) {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('#itemList .item').forEach(item => {
-      const match = value === 'all' || item.dataset.decade === value || item.dataset.type === value;
-      item.classList.toggle('hidden', !match);
-    });
-  }
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

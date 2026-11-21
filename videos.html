@@ -1,130 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Videos & Talks — Hameeda Hossain</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media — Hameeda Hossain Collective</title>
+<meta name="description" content="Video and audio recordings of Hameeda Hossain.">
+<meta property="og:title" content="Media">
+<meta property="og:description" content="Video and audio recordings of Hameeda Hossain.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://res.cloudinary.com/dbuakj5dr/image/upload/v1782515537/portrait_n3u8aw.jpg">
+<link rel="canonical" href="https://hameedahossain.github.io/collective/videos.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
-  <ul class="nav-links">
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="interviews.html">Interviews</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="magazines.html">Magazines</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="photos.html">Photos</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
-    </svg>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="articles.html" onclick="closeMenu()">Articles</a>
-  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
-  <a href="writings.html" onclick="closeMenu()">Writings</a>
-  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
-  <a href="archives.html" onclick="closeMenu()">Archives</a>
-  <a href="photos.html" onclick="closeMenu()">Photos</a>
-  <a href="about.html" onclick="closeMenu()">About</a>
-</div>
-
-<div class="page-header">
-  <a href="index.html" class="back-link">← Back to home</a>
-  <p class="page-header-eyebrow">The Collection</p>
-  <h1>Videos & Talks</h1>
-  <p class="page-header-desc">Lectures, speeches, panel discussions, documentary appearances, and television interviews.</p>
-</div>
-
-<div class="filter-bar">
-  <button class="filter-btn active" onclick="filter(this,'all')">All</button>
-  <button class="filter-btn" onclick="filter(this,'1980s')">1980s</button>
-  <button class="filter-btn" onclick="filter(this,'1990s')">1990s</button>
-  <button class="filter-btn" onclick="filter(this,'2000s')">2000s</button>
-  <button class="filter-btn" onclick="filter(this,'2010s')">2010s</button>
-  <button class="filter-btn" onclick="filter(this,'2020s')">2020s</button>
-  <button class="filter-btn" onclick="filter(this,'Lecture')">Lectures</button>
-  <button class="filter-btn" onclick="filter(this,'Panel')">Panels</button>
-  <button class="filter-btn" onclick="filter(this,'TV')">TV</button>
-  <button class="filter-btn" onclick="filter(this,'Documentary')">Documentary</button>
-</div>
-
-<div class="content-area">
-  <div class="item-list" id="itemList">
-
-    <!--
-    HOW TO ADD A VIDEO:
-    For YouTube/Vimeo: paste the URL directly into href.
-    For locally uploaded video: upload MP4 to videos/ folder and set href="videos/your-file.mp4"
-    Set data-decade and data-type (Lecture, Panel, TV, Documentary, Speech).
-
-    <a href="https://www.youtube.com/watch?v=YOURID" class="item" data-decade="2010s" data-type="Lecture" target="_blank" rel="noopener">
-      <span class="item-year">2015</span>
-      <div class="item-content">
-        <div class="item-title">Talk title — Event name</div>
-        <div class="item-source">Organisation or university · City, Date</div>
-      </div>
-      <span class="item-tag">YouTube</span>
-    </a>
-    -->
-
-    <a href="#" class="item" data-decade="2010s" data-type="Lecture">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Talk or lecture title</div>
-        <div class="item-source">Event · Date</div>
-      </div>
-      <span class="item-tag">YouTube</span>
-    </a>
-    <a href="#" class="item" data-decade="2000s" data-type="Panel">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Panel discussion title</div>
-        <div class="item-source">Event · Date</div>
-      </div>
-      <span class="item-tag">Panel</span>
-    </a>
-    <a href="#" class="item" data-decade="1990s" data-type="TV">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Television appearance</div>
-        <div class="item-source">Channel · Programme · Date</div>
-      </div>
-      <span class="item-tag">TV</span>
-    </a>
-
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-name">Hameeda Hossain</span><span class="brand-sub">The Collective</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main"><a href="writings.html">Writings</a><a href="articles.html">Articles</a><a href="interviews.html">Interviews</a><a href="books.html">Books</a><a href="magazines.html">Magazines</a><a href="videos.html" aria-current="page">Media</a><a href="about.html">About</a><button class="theme-toggle" type="button">Dark</button></nav>
   </div>
-
-  <div class="upload-hint">
-    <strong>To add a video:</strong> For YouTube videos, paste the URL into href and add <code>target="_blank"</code>. For local files, upload MP4 to <code>videos/</code>. Set <code>data-decade</code> and <code>data-type</code> (Lecture, Panel, TV, Documentary) for filters.
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><p class="eyebrow">Media</p><h1 class="page-title">Videos &amp; recordings</h1><p class="lede">Recorded interviews, oral histories and television conversations. Each opens at its original home.</p></div></section>
+<section class="section"><div class="wrap"><div class="grid cols-3"><a class="card media-card" href="https://www.youtube.com/watch?v=Cgoizwmc2Yc" rel="noopener" target="_blank"><div class="thumb"><img src="https://img.youtube.com/vi/Cgoizwmc2Yc/hqdefault.jpg" alt="" loading="lazy"><div class="play"><span>▶</span></div></div>
+  <span class="tag plain">Video ↗</span><h3 lang="bn">বেলা অবেলা সারাবেলা</h3><p class="meta" style="padding-top:.4rem">Desh TV · Interviewed by Asaduzzaman Noor · November 21, 2021</p></a><a class="card media-card" href="https://www.youtube.com/watch?v=atnunRcF-do" rel="noopener" target="_blank"><div class="thumb"><img src="https://img.youtube.com/vi/atnunRcF-do/hqdefault.jpg" alt="" loading="lazy"><div class="play"><span>▶</span></div></div>
+  <span class="tag plain">Video ↗</span><h3>Life in Hyderabad, Sindh During 1947</h3><p class="meta" style="padding-top:.4rem">1947 Partition Archives · Interviewed by Farhana Afroz · Date February 2012</p></a><a class="card media-card" href="https://web.archive.org/web/20240723122158oe_/https://dl.tufts.edu/downloads/f1882159p?file=mp3" rel="noopener" target="_blank"><div class="thumb audio">Audio recording</div>
+  <span class="tag plain">Audio ↗</span><h3>Bengali Intellectuals Oral History Project: Interview with Hameeda Hossain</h3><p class="meta" style="padding-top:.4rem">Tufts University · Interviewed by Iftekhar Iqbal · January 20, 2011</p></a><a class="card media-card" href="https://www.youtube.com/watch?v=9wArB1Po-FY" rel="noopener" target="_blank"><div class="thumb"><img src="https://img.youtube.com/vi/9wArB1Po-FY/hqdefault.jpg" alt="" loading="lazy"><div class="play"><span>▶</span></div></div>
+  <span class="tag plain">Video ↗</span><h3>Women Speak on Secularism</h3><p class="meta" style="padding-top:.4rem">Secularism Is A Women&#x27;s Issue (SIAWI) · Conducted by Marieme Helie Lucas · April 2011</p></a></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>The Collective</h2>
+        <p>An archive of the writings, interviews and public life of Hameeda Hossain — historian, writer and human rights defender.</p>
+        <p class="muted">Writings are reproduced for study and remembrance. Where a piece first appeared elsewhere, the original publication is credited and linked on its page.</p>
+      </div>
+      <div>
+        <h2>Read</h2>
+        <ul><li><a href="writings.html">Writings</a></li><li><a href="articles.html">Newspaper articles</a></li><li><a href="interviews.html">Interviews</a></li><li><a href="books.html">Books</a></li></ul>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="magazines.html">Magazines</a></li><li><a href="videos.html">Media</a></li><li><a href="photos.html">Photographs</a></li><li><a href="archives.html">Archives</a></li><li><a href="about.html">About</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-base"><span>Hameeda Hossain Collective</span><span>হামিদা হোসেন</span></div>
   </div>
-</div>
-
-<footer>
-  <span class="footer-name">Hameeda Hossain — Collective</span>
-  <span class="footer-note">Hosted free on GitHub Pages</span>
 </footer>
-
-<script>
-  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
-
-  function filter(btn, value) {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('#itemList .item').forEach(item => {
-      const match = value === 'all' || item.dataset.decade === value || item.dataset.type === value;
-      item.classList.toggle('hidden', !match);
-    });
-  }
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
