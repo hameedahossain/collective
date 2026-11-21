@@ -34,6 +34,7 @@ covers = load("covers.json", {})
 commons = {c["key"]: c for c in load("commons.json", [])}
 timeline = load("timeline.json", [])
 theme_art = load("theme_images.json", {})
+writing_art = load("writing_images.json", {})
 photo_by = {p["slug"]: p for p in photos}
 
 THEMES = ["Gender & Development", "Violence Against Women", "Human Rights, Justice & Religion", "Democracy & Politics",
@@ -59,8 +60,8 @@ def image_for(ref):
     return None
 
 
-def theme_image(theme):
-    return image_for(theme_art.get(theme))
+def theme_image(theme, slug_=None):
+    return image_for(writing_art.get(slug_)) or image_for(theme_art.get(theme))
 
 
 # ── Markdown ────────────────────────────────────────────────────────────────
@@ -173,7 +174,7 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
         <p class="muted">Writings are reproduced for study and remembrance; each page credits where a piece first appeared. Photographs are from her personal archive unless credited otherwise.</p>
       </div>
       <ul><li><a href="{up}writings.html">Writings</a></li><li><a href="{up}timeline.html">Life &amp; times</a></li><li><a href="{up}articles.html">Newspaper articles</a></li><li><a href="{up}interviews.html">Interviews</a></li></ul>
-      <ul><li><a href="{up}books.html">Books</a></li><li><a href="{up}videos.html">Video &amp; audio</a></li><li><a href="{up}magazines.html">Magazines</a></li><li><a href="{up}photos.html">Photographs</a></li><li><a href="{up}about.html">About</a></li></ul>
+      <ul><li><a href="{up}books.html">Books</a></li><li><a href="{up}videos.html">Video &amp; audio</a></li><li><a href="{up}magazines.html">Magazines</a></li><li><a href="{up}photos.html">Photographs</a></li><li><a href="{up}about.html">About</a></li><li><a href="{up}about.html#credits">Image credits</a></li></ul>
     </div>
   </div>
 </footer>
@@ -271,7 +272,7 @@ for i, w in enumerate(writings):
     pager += (f'<a class="prev" href="{prev_w["slug"]}.html"><small>Previous</small><span{langattr(prev_w["title"])}>{E(prev_w["title"])}</span></a>' if prev_w else "<span></span>")
     pager += (f'<a class="next" href="{next_w["slug"]}.html"><small>Next</small><span{langattr(next_w["title"])}>{E(next_w["title"])}</span></a>' if next_w else "")
     pager += "</nav>"
-    img = theme_image(w["theme"])
+    img = theme_image(w["theme"], w["slug"])
     banner = (f'<figure class="reading-banner"><img src="../{E(img["src"])}" alt=""><figcaption>{E(img["alt"])}{(" · " + E(img["credit"])) if img.get("credit") else ""}</figcaption></figure>' if img else "")
     body = f"""
 <article>
@@ -305,7 +306,7 @@ themes_present = [(slug(t), t) for t in THEMES if slug(t) in theme_counts]
 
 
 def writing_row(w, prefix=""):
-    img = theme_image(w["theme"])
+    img = theme_image(w["theme"], w["slug"])
     text = " ".join([w["title"], w.get("publication") or "", w.get("summary", ""), w["theme"]]).lower()
     return entry(f"{prefix}writings/{w['slug']}.html", img["thumb"] if img else None, w.get("year"), w["title"], w["pub_short"],
                  w.get("summary", ""), [w["theme"], "বাংলা" if w["bn"] else ""],
@@ -518,8 +519,8 @@ page("timeline.html", "A life in its times", body, active="timeline.html", descr
 
 
 # ── About ───────────────────────────────────────────────────────────────────
-credits = sorted({(c["subject"], c["credit_line"], c.get("commons_page", "")) for c in commons.values()})
-credit_html = ("<details class='credits'><summary>Image credits</summary><ul>" + "".join(
+credits = sorted({(re.sub(r"^\d+\.\s*", "", c["subject"]), c["credit_line"], c.get("commons_page", "")) for c in commons.values()})
+credit_html = ("<details class='credits' id='credits'><summary>Image credits</summary><p>Historical photographs are from Wikimedia Commons under the licences shown. All other photographs are from Hameeda Hossain's personal archive.</p><ul>" + "".join(
     f'<li>{E(s)}: {E(cr)}{f" (<a href={chr(34)}{E(u)}{chr(34)} rel={chr(34)}noopener{chr(34)} target={chr(34)}_blank{chr(34)}>source</a>)" if u else ""}</li>' for s, cr, u in credits) + "</ul></details>") if credits else ""
 body = head("About Hameeda Hossain") + f"""
 <section class="section"><div class="wrap two-col">
@@ -548,7 +549,7 @@ NUMBERED = ["recollections-of-kormojibi-nari", "bangladesh-2006-a-human-rights-a
 
 
 def feat_img(w):
-    return theme_image(w["theme"])
+    return theme_image(w["theme"], w["slug"])
 
 
 lead = by_slug.get(LEAD)
