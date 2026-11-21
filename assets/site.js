@@ -3,6 +3,9 @@
   var root = document.documentElement;
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // open the credits panel when linked to directly
+  if (location.hash === '#credits') { var cr = document.getElementById('credits'); if (cr) cr.open = true; }
+
   // ── theme toggle (remembered per browser) ──
   function stored() { try { return localStorage.getItem('hh-theme'); } catch (e) { return null; } }
   function store(v) { try { localStorage.setItem('hh-theme', v); } catch (e) {} }
