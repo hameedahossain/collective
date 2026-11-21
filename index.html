@@ -1,411 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hameeda Hossain — Collective</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hameeda Hossain Collective</title>
+<meta name="description" content="An archive of the writings, interviews and public life of Hameeda Hossain, Bangladeshi human rights defender, historian and writer.">
+<meta property="og:title" content="Hameeda Hossain Collective">
+<meta property="og:description" content="An archive of the writings, interviews and public life of Hameeda Hossain, Bangladeshi human rights defender, historian and writer.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://res.cloudinary.com/dbuakj5dr/image/upload/v1782515537/portrait_n3u8aw.jpg">
+<link rel="canonical" href="https://hameedahossain.github.io/collective/index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-  /* HOME-SPECIFIC STYLES */
-  .hero {
-    padding: 7rem 2rem 5rem;
-    max-width: 720px;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .hero-eyebrow {
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 1.5rem;
-  }
-
-  .hero h1 {
-    font-family: var(--serif);
-    font-size: clamp(2.8rem, 6vw, 4.2rem);
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-    margin-bottom: 1.75rem;
-  }
-
-  .hero h1 em { font-style: italic; }
-
-  .hero-bio {
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    line-height: 1.75;
-    color: var(--ink-mid);
-    max-width: 580px;
-  }
-
-  .hero-meta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-    border-top: 1px solid var(--rule);
-  }
-
-  .hero-meta-item { display: flex; flex-direction: column; gap: 3px; }
-
-  .hero-meta-label {
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-  }
-
-  .hero-meta-value {
-    font-family: var(--serif);
-    font-size: 1rem;
-    color: var(--ink);
-  }
-
-  /* FEATURED SECTIONS */
-  .home-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3.5rem 2rem;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .home-section-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 1.75rem;
-    padding-bottom: 0.9rem;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .home-section-title {
-    font-family: var(--serif);
-    font-size: 1.35rem;
-    font-weight: 400;
-    color: var(--ink);
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-  }
-
-  .home-section-icon { font-size: 1rem; }
-
-  .view-all {
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    text-decoration: none;
-    transition: color 0.15s;
-    white-space: nowrap;
-  }
-
-  .view-all:hover { color: var(--ink); }
-
-  /* CATEGORY GRID */
-  .categories-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3.5rem 2rem 5rem;
-  }
-
-  .categories-label {
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-  }
-
-  .category-card {
-    background: var(--white);
-    padding: 1.75rem;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    transition: background 0.15s;
-    position: relative;
-  }
-
-  .category-card:hover { background: var(--off); }
-  .category-card:hover .cat-arrow { opacity: 1; transform: translateX(0); }
-
-  .cat-icon { font-size: 1.3rem; margin-bottom: 0.2rem; }
-
-  .cat-title {
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    font-weight: 500;
-    color: var(--ink);
-    line-height: 1.2;
-  }
-
-  .cat-desc {
-    font-size: 12.5px;
-    color: var(--ink-muted);
-    line-height: 1.5;
-    flex: 1;
-  }
-
-  .cat-arrow {
-    position: absolute;
-    top: 1.75rem;
-    right: 1.75rem;
-    color: var(--ink-muted);
-    opacity: 0;
-    transform: translateX(-4px);
-    transition: all 0.15s;
-    font-size: 1rem;
-  }
-
-  @media (max-width: 700px) {
-    .hero { padding: 4rem 1.25rem 3rem; }
-    .home-section { padding: 2.5rem 1.25rem; }
-    .categories-section { padding: 2.5rem 1.25rem 4rem; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-name">Hameeda Hossain</span><span class="brand-sub">The Collective</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main"><a href="writings.html">Writings</a><a href="articles.html">Articles</a><a href="interviews.html">Interviews</a><a href="books.html">Books</a><a href="magazines.html">Magazines</a><a href="videos.html">Media</a><a href="about.html">About</a><button class="theme-toggle" type="button">Dark</button></nav>
+  </div>
+</header>
+<main id="main">
 
-<nav>
-  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
-  <ul class="nav-links">
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="interviews.html">Interviews</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="magazines.html">Magazines</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="photos.html">Photos</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
-    </svg>
-  </button>
-</nav>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="articles.html" onclick="closeMenu()">Articles</a>
-  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
-  <a href="writings.html" onclick="closeMenu()">Writings</a>
-  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
-  <a href="archives.html" onclick="closeMenu()">Archives</a>
-  <a href="photos.html" onclick="closeMenu()">Photos</a>
-  <a href="about.html" onclick="closeMenu()">About</a>
-</div>
-
-<!-- HERO -->
-<section class="hero">
-  <p class="hero-eyebrow">The Collective</p>
-  <h1>Hameeda<br><em>Hossain</em></h1>
-  <p class="hero-bio">
-    Lawyer, activist, writer, and editor — a life dedicated to human rights,
-    women's justice, and civil liberties in Bangladesh and beyond.
-    This archive gathers her published work, journalism, personal writings,
-    and the magazines she built across five decades of public life.
-  </p>
-  <div class="hero-meta">
-    <div class="hero-meta-item">
-      <span class="hero-meta-label">Active</span>
-      <span class="hero-meta-value">1970s – present</span>
-    </div>
-    <div class="hero-meta-item">
-      <span class="hero-meta-label">Fields</span>
-      <span class="hero-meta-value">Law · Rights · Journalism</span>
-    </div>
-    <div class="hero-meta-item">
-      <span class="hero-meta-label">Based in</span>
-      <span class="hero-meta-value">Dhaka, Bangladesh</span>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="eyebrow">The Collective</p>
+    <h1 class="display">Hameeda Hossain<span class="bn-name" lang="bn">হামিদা হোসেন</span></h1>
+    <p class="lede">Lawyer, activist, writer, and editor — a life dedicated to human rights, women&#x27;s justice, and civil liberties in Bangladesh and beyond. This archive gathers her published work, journalism, personal writings, and the magazines she built across five decades of public life.</p>
+    <dl class="hero-meta"><div><dt>Active</dt><dd>1970s – present</dd></div><div><dt>Fields</dt><dd>Law · Rights · Journalism</dd></div><div><dt>Based in</dt><dd>Dhaka, Bangladesh</dd></div></dl>
+    <div class="hero-actions"><a class="btn" href="writings.html">Read her writings</a><a class="btn ghost" href="about.html">About her</a></div>
+  </div>
+  <figure class="portrait"><img src="https://res.cloudinary.com/dbuakj5dr/image/upload/v1782515537/portrait_n3u8aw.jpg" alt="Portrait of Hameeda Hossain" width="480" height="600"></figure>
+</div></section>
+<section class="section quote-band"><div class="wrap"><blockquote>Intolerance and violence cannot promise justice nor is it the way towards an open, democratic society.<cite>From <a href="writings/towards-tolerance-and-justice.html">Towards Tolerance and Justice</a>, 2014</cite></blockquote></div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">Begin reading</p><h2>Selected writings</h2></div><a class="more" href="writings.html">All writings →</a></div>
+  <div class="grid cols-3"><a class="card" href="writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"><span class="tag">Speeches, Talks &amp; Lectures</span><h3>The Challenge of Citizenship in Building a Just Society (BDI Lifetime Achievement Award Lecture)</h3>
+  <p class="card-quote">“We need to work together with everyone, without exception, to promote a democratic culture and respect for rights.”</p>
+  <p class="meta">BDI Lifetime Achievement Award lecture · 2021</p></a><a class="card" href="writings/towards-tolerance-and-justice.html"><span class="tag">Human Rights, Justice &amp; Religion</span><h3>Towards Tolerance and Justice</h3>
+  <p class="card-quote">“Intolerance and violence cannot promise justice nor is it the way towards an open, democratic society.”</p>
+  <p class="meta">The Daily Star, 23rd Anniversary supplement · 2014</p></a><a class="card" href="writings/recollections-of-kormojibi-nari.html"><span class="tag">Tributes &amp; Remembrances</span><h3>Recollections of Kormojibi Nari</h3>
+  <p class="card-quote">“Kormojibi Nari can play an important role in taking this struggle forward, if it stays with the workers and is not swayed by political loyalties.”</p>
+  <p class="meta">Written for the Kormojibi Nari anniversary,… · 2011</p></a><a class="card" href="writings/remembering-asma.html"><span class="tag">Tributes &amp; Remembrances</span><h3>Remembering Asma</h3>
+  <p class="card-quote">“And to do so without fear or favour.”</p>
+  <p class="meta">Prothom Alo English, Opinion · 2018</p></a><a class="card" href="writings/bangladesh-2006-a-human-rights-audit.html"><span class="tag">Human Rights, Justice &amp; Religion</span><h3>Bangladesh 2006: A Human Rights Audit</h3>
+  <p class="card-quote">“Parliament failed to perform its function as a watchdog, and as a place for negotiation and dialogue.”</p>
+  <p class="meta">Forum · 2007</p></a><a class="card" href="writings/crossing-the-boundaries.html"><span class="tag">Gender &amp; Development</span><h3>Crossing the Boundaries</h3>
+  <p class="card-quote">“It is not only that they have learnt a new game but that they can be counted upon to resist discrimination.”</p>
+  <p class="meta">Written for The Hunger Project · 2018</p></a></div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">By theme</p><h2>Five decades of argument</h2></div></div>
+  <div class="grid cols-3"><a class="card theme-card" href="writings.html?theme=gender-and-development"><span class="count">7</span><h3>Gender &amp; Development</h3><p class="muted" style="font-size:.85rem">pieces</p></a><a class="card theme-card" href="writings.html?theme=violence-against-women"><span class="count">1</span><h3>Violence Against Women</h3><p class="muted" style="font-size:.85rem">piece</p></a><a class="card theme-card" href="writings.html?theme=human-rights-justice-and-religion"><span class="count">4</span><h3>Human Rights, Justice &amp; Religion</h3><p class="muted" style="font-size:.85rem">pieces</p></a><a class="card theme-card" href="writings.html?theme=labour-and-workers-rights"><span class="count">2</span><h3>Labour &amp; Workers&#x27; Rights</h3><p class="muted" style="font-size:.85rem">pieces</p></a><a class="card theme-card" href="writings.html?theme=1971-war-and-history"><span class="count">1</span><h3>1971, War &amp; History</h3><p class="muted" style="font-size:.85rem">piece</p></a><a class="card theme-card" href="writings.html?theme=crafts-weaving-and-heritage"><span class="count">1</span><h3>Crafts, Weaving &amp; Heritage</h3><p class="muted" style="font-size:.85rem">piece</p></a><a class="card theme-card" href="writings.html?theme=tributes-and-remembrances"><span class="count">9</span><h3>Tributes &amp; Remembrances</h3><p class="muted" style="font-size:.85rem">pieces</p></a><a class="card theme-card" href="writings.html?theme=speeches-talks-and-lectures"><span class="count">5</span><h3>Speeches, Talks &amp; Lectures</h3><p class="muted" style="font-size:.85rem">pieces</p></a><a class="card theme-card" href="writings.html?theme=forewords-prefaces-and-reviews"><span class="count">1</span><h3>Forewords, Prefaces &amp; Reviews</h3><p class="muted" style="font-size:.85rem">piece</p></a></div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="feature">
+    <div class="book-cover " aria-hidden="true"><div><div class="bc-title">Claiming Our Rights</div><div class=bc-sub>Feminist Discourses in Bangladesh and South Asia</div></div><div class="bc-author">Author · 2023</div></div>
+    <div>
+      <p class="eyebrow">Her collected essays</p>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Claiming Our Rights: Feminist Discourses in Bangladesh and South Asia</h2>
+      <p class="lede" style="margin-top:1rem;font-size:1.08rem">A collection of essays Hossain wrote over several decades, following how the women&#x27;s rights movement in Bangladesh and South Asia developed its arguments over almost fifty years. The essays look at women in policymaking, in markets and in parliament, and at how women organised politically.</p>
+      <div class="hero-actions"><a class="btn" href="books.html">Find the book</a><a class="btn ghost" href="books.html#more">All books</a></div>
     </div>
   </div>
-</section>
-
-<!-- FEATURED: ARTICLES -->
-<div class="home-section">
-  <div class="home-section-header">
-    <h2 class="home-section-title"><span class="home-section-icon">📰</span> Newspaper Articles</h2>
-    <a href="articles.html" class="view-all">View all →</a>
-  </div>
-  <div class="item-list">
-    <!-- ADD YOUR FEATURED ARTICLES HERE — copy and paste this block for each one -->
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Article title goes here</div>
-        <div class="item-source">Publication · Date</div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">The archive</p><h2>Explore the collection</h2></div></div>
+  <div class="grid cols-4"><a class="card stat-card" href="writings.html"><span class="num">31</span><h3>Writings</h3><p>Essays, op-eds, talks and tributes in full</p></a><a class="card stat-card" href="articles.html"><span class="num">10</span><h3>Newspaper articles</h3><p>Scans of her columns as published</p></a><a class="card stat-card" href="interviews.html"><span class="num">14</span><h3>Interviews</h3><p>In print, on air and online</p></a><a class="card stat-card" href="books.html"><span class="num">11</span><h3>Books</h3><p>Authored, edited and contributed</p></a></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>The Collective</h2>
+        <p>An archive of the writings, interviews and public life of Hameeda Hossain — historian, writer and human rights defender.</p>
+        <p class="muted">Writings are reproduced for study and remembrance. Where a piece first appeared elsewhere, the original publication is credited and linked on its page.</p>
       </div>
-      <span class="item-tag">PDF</span>
-    </a>
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Article title goes here</div>
-        <div class="item-source">Publication · Date</div>
+      <div>
+        <h2>Read</h2>
+        <ul><li><a href="writings.html">Writings</a></li><li><a href="articles.html">Newspaper articles</a></li><li><a href="interviews.html">Interviews</a></li><li><a href="books.html">Books</a></li></ul>
       </div>
-      <span class="item-tag">PDF</span>
-    </a>
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Article title goes here</div>
-        <div class="item-source">Publication · Date</div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="magazines.html">Magazines</a></li><li><a href="videos.html">Media</a></li><li><a href="photos.html">Photographs</a></li><li><a href="archives.html">Archives</a></li><li><a href="about.html">About</a></li></ul>
       </div>
-      <span class="item-tag">PDF</span>
-    </a>
+    </div>
+    <div class="foot-base"><span>Hameeda Hossain Collective</span><span>হামিদা হোসেন</span></div>
   </div>
-</div>
-
-<!-- FEATURED: INTERVIEWS -->
-<div class="home-section">
-  <div class="home-section-header">
-    <h2 class="home-section-title"><span class="home-section-icon">🎙</span> Interviews</h2>
-    <a href="interviews.html" class="view-all">View all →</a>
-  </div>
-  <div class="item-list">
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Interview title</div>
-        <div class="item-source">Conducted by · Date</div>
-      </div>
-      <span class="item-tag">Text</span>
-    </a>
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Interview title</div>
-        <div class="item-source">Conducted by · Date</div>
-      </div>
-      <span class="item-tag">Audio</span>
-    </a>
-  </div>
-</div>
-
-<!-- FEATURED: WRITINGS -->
-<div class="home-section">
-  <div class="home-section-header">
-    <h2 class="home-section-title"><span class="home-section-icon">✍️</span> Writings</h2>
-    <a href="writings.html" class="view-all">View all →</a>
-  </div>
-  <div class="item-list">
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Essay or piece title</div>
-        <div class="item-source">Where published</div>
-      </div>
-      <span class="item-tag">Essay</span>
-    </a>
-    <a href="#" class="item">
-      <span class="item-year">——</span>
-      <div class="item-content">
-        <div class="item-title">Essay or piece title</div>
-        <div class="item-source">Where published</div>
-      </div>
-      <span class="item-tag">Op-ed</span>
-    </a>
-  </div>
-</div>
-
-<!-- FEATURED: PHOTOS (mini grid) -->
-<div class="home-section">
-  <div class="home-section-header">
-    <h2 class="home-section-title"><span class="home-section-icon">🖼</span> Photos</h2>
-    <a href="photos.html" class="view-all">View all →</a>
-  </div>
-  <div class="photo-grid" style="grid-template-columns: repeat(auto-fill, minmax(160px,1fr));">
-    <!-- Replace each .photo-slot div with your image once you have photos -->
-    <div class="photo-slot"><div class="photo-placeholder"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/></svg><span>Upload photo</span></div></div>
-    <div class="photo-slot"><div class="photo-placeholder"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/></svg><span>Upload photo</span></div></div>
-    <div class="photo-slot"><div class="photo-placeholder"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/></svg><span>Upload photo</span></div></div>
-    <div class="photo-slot"><div class="photo-placeholder"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3"/></svg><span>Upload photo</span></div></div>
-  </div>
-</div>
-
-<!-- ALL CATEGORIES GRID -->
-<div class="categories-section">
-  <p class="categories-label">Browse the full collection</p>
-  <div class="categories-grid">
-    <a href="articles.html" class="category-card">
-      <div class="cat-icon">📰</div>
-      <div class="cat-title">Newspaper Articles</div>
-      <div class="cat-desc">Published pieces across national and international press.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="interviews.html" class="category-card">
-      <div class="cat-icon">🎙</div>
-      <div class="cat-title">Interviews</div>
-      <div class="cat-desc">Conversations with journalists, academics, and media.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="writings.html" class="category-card">
-      <div class="cat-icon">✍️</div>
-      <div class="cat-title">Writings</div>
-      <div class="cat-desc">Essays, op-eds, forewords, and personal writing.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="magazines.html" class="category-card">
-      <div class="cat-icon">📖</div>
-      <div class="cat-title">Magazines</div>
-      <div class="cat-desc">Publications she founded and edited over the decades.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="archives.html" class="category-card">
-      <div class="cat-icon">🗂</div>
-      <div class="cat-title">Archives</div>
-      <div class="cat-desc">Historical documents, letters, and institutional records.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="photos.html" class="category-card">
-      <div class="cat-icon">🖼</div>
-      <div class="cat-title">Photo Gallery</div>
-      <div class="cat-desc">Personal and public photographs across her life.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="videos.html" class="category-card">
-      <div class="cat-icon">🎬</div>
-      <div class="cat-title">Videos & Talks</div>
-      <div class="cat-desc">Lectures, speeches, and documentary appearances.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-    <a href="about.html" class="category-card">
-      <div class="cat-icon">ℹ️</div>
-      <div class="cat-title">About</div>
-      <div class="cat-desc">Her biography, work, and the story of this collective.</div>
-      <span class="cat-arrow">→</span>
-    </a>
-  </div>
-</div>
-
-<footer>
-  <span class="footer-name">Hameeda Hossain — Collective</span>
-  <span class="footer-note">Hosted free on GitHub Pages</span>
 </footer>
-
-<script>
-  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

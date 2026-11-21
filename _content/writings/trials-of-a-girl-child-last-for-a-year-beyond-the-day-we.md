@@ -1,0 +1,50 @@
+---
+title: "Trials of a Girl Child Last for a Year, Beyond the Day We Celebrate"
+slug: "trials-of-a-girl-child-last-for-a-year-beyond-the-day-we"
+author: "Hameeda Hossain"
+date: ""
+year: ""
+publication: ""
+source_url: ""
+source_status: "from the document"
+theme: "Violence Against Women"
+type: "op-ed/column"
+language: "English"
+summary: "A column for the Day of the Girl Child arguing that one day of awareness means little while girls face exploitation all year. Using ASK newspaper data on 2004 violence against domestic workers and on dowry violence, it challenges middle-class readers who employ child domestic workers, criticises police inaction and impunity for well-connected employers, and calls for equal treatment of girls and boys."
+pull_quote: "Otherwise there is little point in celebrating single days, when discrimination becomes the order of the year."
+translator: ""
+author_note: ""
+editorial_notes: []
+archive_id: "R012"
+---
+The world has chosen one special day a year to remember the girl child. On this day, we usually recall the obstacles a girl child faces from her birth, on growing into adolescence and then on becoming a woman. For the rest of the year she experiences all the trials that we have referred to on that one day. Poor, young girls are made to work in middle class homes, when others of her age go to school; we encounter girls selling flowers on the road side as our cars rush past; we read of young girls disappearing into sex work or trafficking.
+
+We may wake up shocked when we read of brutal violence on young domestic workers by their employers, or of an incident of sexual abuse. We issue statements in protest, some of us provide legal aid or shelter to help the victim. This helps an individual to salve her/his conscience. But how many cases against domestic employers really lead to justice and a better life for the young girl, how much does this really change the situation? Are there fewer incidents today than there were yesterday?
+
+A compilation of newspaper reports by Ain o Salish Kendra’s Documentation Unit tells a frightening story. The following table shows that newspapers reported a total of 83 cases of violence against domestic workers in 2004. Fifty two of the victims were below 18 years, who are recognized internationally as children. Violence included physical torture and rape. Of these 9 young girls died as a result of physical torture.
+
+### Violence Against Domestic Worker in 2004
+
+### Age
+
+**Nature of violenceunder 67-1213-1819-2425-3030+TotalNo. of cases**Physical torture18102123817Rape31196Form of violence not mentioned 1198143619**Total223010278342**Death from physical torture54112
+
+We are shocked by the violence on the girl child but not by the fact that poor girls are put into this vulnerable position by their parents, who instead of sending them to school, abandon them to work in homes, or in other hazardous jobs such as sex work. The violence is merely the tip of the iceberg, what we need to face up to is that making a young girl work is itself a violation of her right to childhood and adolescence. Poor parents may be economically compelled to do so, but don’t employers see this as an opportunity to use cheap labour? By employing her to work in a home we deprive her of her right to education and expose her to long hours of work without rest and leisure, as well as to possible accidents at work or abuse by her employers.
+
+Yet many of us who commemorate the day of the girl child also employ young girls in our homes. Many of us do so thinking that at least we are helping out her poor parents, but at the same time do we think of sending her to school, or of giving her the same opportunities as our children enjoy?
+
+The day of the girl child is meant to create awareness of her rights. Indeed, the relevant ministries will line up little children to cheer the occasion. But will the government have taken any steps to ensure an end to the victimization of poor, young girls. Even if it is incapable of stopping this employment, can it not take steps to register child workers, to monitor their conditions of work and to provide some educational support? Even more important why have the law enforcement agencies been so unwilling to take action against violent employers.
+
+Many of us have memorized the Child Rights Convention and can recite all its articles, but do we really believe in it and do we practice it? If awareness does not lead to action, it is not of much use to merely memorize what it says and parrot our knowledge once a year. Many organizations have taken up programmes to protect the rights of the girl child and have set up support services which enable young working girls to learn about life, to gain knowledge, so that they can access opportunities. Drop-in-centres are run by government and non-government agencies, including Ain o Salish Kendra (ASK) to provide non-formal education; in addition some shelters provide physical protection, others provide legal aid.
+
+Economic compulsions drive children to work, and they become vulnerable to oppression because of its social acceptance by the community. We blame their condition on poverty, but we also aggravate their condition because we tolerate violence, and do not take a strong stand against those who are violent. When cases are filed against employers, many of them seem to escape proper punishment, because of their professional or social status. The child who is injured or killed is expendable, but a doctor or business person who commits violence can be excused because after all they belong to middle class families, with connections and are seen as useful members of society.
+
+If we are convinced of the rights of a girl child then the next step is to practice it ourselves, in our own lives and in our own homes. One choice could be not to employ child domestic workers, but if we do, we might consider the child as a human being deserving the same treatment as our own children. In that case, we should also be prepared to educate the child, to allow her to play as we do our own children, to dress like our children. It is quite amazing how parents think nothing of buying warm clothes and shoes for their children, while their girl domestic worker wears rags and hand me downs and carries books and bags for a child her own age. This is a common scene outside schools.
+
+But it is not only on account of poverty that young girls face risks. In middle class homes, too, there is a marked difference between our treatment of girls and boys. The former may be told to stay at home, while their brothers go out to play. They are taught home tasks while their brothers learn science. How is this likely to affect their chances of making a career choice? It is commonly accepted that a girl’s future lies in marriage, why should she need another choice? We are prepared to do anything to ensure that a growing girl gets married – even to the extent of arranging an unsuitable marriage or paying dowry. Women’s groups have held endless seminars on dowry. The PM and the Minister of Women’s Affairs have led rallies against dowry practice, but it hasn’t occurred to us that if marriage is a compulsion, dowry will be determined by demand and supply.
+
+Dowry has been identified as a major cause of violence. The newspapers reported that 31 out of 352 victims of dowry related violence were between the ages of 13 and 18 years. Of the under eighteens, twenty six were subjected to physical torture, one to acid burn, 3 committed suicide and one was thrown out of her marital home. Legal aid organizations often come to the support of the victims after the act of violence, but could the community not step in to stop marriages at such an early age? Do parents not realize the risks they are letting their daughters into?
+
+Bangladesh’s economy has changed, and young women are now entering the labour force, becoming professionals. They are supporting their families and holding independent, responsible jobs. They are no longer burdens, and we need to resist the traditional stereotype. We must learn to respect all children, girls and boys without exception and society must allow equal opportunities, irrespective of their gender. Otherwise there is little point in celebrating single days, when discrimination becomes the order of the year.
+
+Compiled by Documentation Unit, Ain o Salish Kendra (ASK) from Prothom Alo, Bhorer Kagoj, Ittefaq, Janakantha, Inqilab, Banglabazar, Jugantor, Dinkal, Daily Star, Manabzamin.

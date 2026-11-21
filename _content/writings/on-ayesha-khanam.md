@@ -1,0 +1,40 @@
+---
+title: "On Ayesha Khanam"
+slug: "on-ayesha-khanam"
+author: "Hameeda Hossain"
+date: ""
+year: ""
+publication: ""
+source_url: ""
+source_status: "from the document"
+theme: "Tributes & Remembrances"
+type: "tribute/remembrance"
+language: "English"
+summary: "A tribute to Ayesha Khanam of Bangladesh Mahila Parishad, tracing her path from 1960s student activist to women's-rights leader. It recalls her campaigns for a Uniform Family Code, against fatwa violence (the Nurjehan case), and for justice for Yasmin, a 14-year-old domestic worker raped and killed by police. It also covers her leadership in CEDAW shadow reporting and her openness to younger feminists."
+pull_quote: "She was fearless in her fight against gender violence."
+translator: ""
+author_note: ""
+editorial_notes: []
+archive_id: "R050"
+---
+I have known Ayesha for a long time. I knew her at different stages of her life as a student activist, a nationalist and a feminist.
+
+I first saw her as a student in the sixties, in Dhaka University - She was a member of the Chattro Union, and became very involved with national causes, and particularly with the student movement in 1969.
+
+As she shouted slogans against martial law and for democracy she also began to talk of equality between men and women. She became close to other women activists and joined their efforts to form the Bangladesh Mahila Parishad. In 1970 members of the women’s Atto Rakkha Shomitis came together with young women students to form the Bangladesh Mahila Parishad, so that together they could promote the rights of women. In 1970, as I sat in the audience at the Purbani Hotel at its inauguration, I heard Begum Sufia Kamal talk about our rights. I saw Ayesha assisting the speakers and guests to take their places. She too cheered in support of what was being said.
+
+From a student activist Ayesha became a women’s rights’ activist. She met with women’s groups across the country and spoke of the need for legal reform. Earlier, the government had set up a Commission under the chairmanship of Justice Rasheed to suggest reforms in personal laws. This had led to the 1961 Family Laws Ordinance. This went only partially to meet women’s demands for reform of personal laws. In the ongoing debates the Mahila Parishad continued to advocate further changes to ensure that women could have equal rights to divorce, to stop the practice of dowry payments and to enforce maintenance payments. Ayesha was an active advocate of reforms that would lead to gender equality amongst men and women within their respective communities and to equal rights for women across different communities.
+
+Ayesha was very active in promoting the idea of a Uniform Family Code – for personal laws that would apply to women and men irrespective of their faith or community, and that would mean that individuals of all religious groups would enjoy the same rights in the family. She pushed for this by addressing Mahila Parishad member groups across the country. In the 1980s, the Mahila Parishad shared a draft of their suggested changes with other organisations such as Ain o Salish Kendra. We worked together and after several meetings organized by Maleka Begum, Ayesha Khanam and members of the Mahila Parishad legal team we collectively prepared a draft that represented our demands for gender justice. The Mahila Parishad provided the leadership in organizing public campaigns and advocacy discussions. The outcome draft submitted to the Government indicated how the discrimination prevailed particularly in matters of guardianship, maintenance and divorce. Thus the campaign for equal personal rights continues.
+
+As the Mahila Parishad grew in size Ayesha took on more responsibilities. She was fearless in her fight against gender violence. I remember how we worked together, through our organisations to take up the legal case for Yasmin, a 14 year old domestic worker who was raped and killed by police officers while she was travelling back to her home to Dinajpur. BMP members held meetings in Dinajpur and Dhaka where different organisations joined in. We approached Barrister Amirul Islam, a senior lawyer to take up the case. The High Court gave a landmark judgement against police violence.
+
+In 1993, when newspapers reported the incident of Nurjehan’s death provoked by a fatwa, Ayesha lost no time in contacting BMP members in Moulvi Bazar. A criminal case was filed by BMP on grounds of abetment to suicide. After seven years the Imam who had pronounced the verdict was convicted. BMP and ASK, along with other organisations, filed writs in the High Court seeking to penalize fatwa givers who imposed penalties or violence on women. Some took up legal action, others campaigned in public, or used the media to create public awareness. Once again Ayesha was seen campaigning in public, standing up against fatwa givers. Finally, after about 10 years, we were able to obtain a Supreme Court judgement declaring illegal fatwas that instigated violence against women.
+
+Ayesha always played an important role in women’s movements, both for reform of personal laws as well as for rights of women workers. She tried to promote institutional changes even outside the country. As a result we began to work for Bangladesh’ adoption of international laws and their compliance. Together we worked on monitoring the implementation of CEDAW in Bangladesh. In 1995 both Ayesha and I were part of a group that drafted a shadow report and took it to New York to present to the CEDAW Committee. Since then many organisations have come together to form a Coalition which monitors developments and prepares periodic reports which are submitted to the Government and to the CEDAW Committee. It was as a consequence of Ayesha’s leadership that the CEDAW coalition has been able to submit periodic shadow reports to the CEDAW Committee . As a consequence the government finally withdrew its reservation to Articles 13 and 16 of CEDAW. Advocacy to withdraw the Government’s reservation to Article 2 continues.
+
+In working with her I always found Ayesha open in accepting new ideas and taking on suggestions. She reached across to women of a younger generation and tried to understand how their demands were based on particular experiences which were different from those of an older generation. We can see in Seuty Sabur’s article in the *Daily Star,* an articulation of ideas that have evolved within the Bangladesh Mahila Parishad. This owes something to the openness across generations and communities that was encouraged by Ayesha Khanam. The Bangladesh Mahila Parishad now represents women of different generations. If they have been able to cross the divide it may, to some extent, have been possible because of Ayesha reaching out to the younger generation and her efforts to understand their concerns that went beyond economic inequalities and political participation to concerns of sexual harassment and violence. It was during her time that the members formed study circles which reached out to younger members.
+
+Today many of us, young and old, will remember Ayesha Khanam as a friend and leader, a social activist who interacted with political policies, a reformist and campaigner for establishing legal rights. We come from different generations and from different organisations. Some of us have stood with Ayesha shouting slogans for freedom in the student movement of 1969, some of us have campaigned with Ayesha to address the inequalities in the Family Laws Ordinance or inadequacies in the Nari Nirjaton Daman Ain. As we continue our struggle for justice, we will all remember Ayesha’s legacy.
+
+Let us honor her by recording her story as she grew from a student activist to a women’s rights’ activist, let us work together to promote t values of democracy and feminism.

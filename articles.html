@@ -1,199 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newspaper Articles — Hameeda Hossain</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Articles — Hameeda Hossain Collective</title>
+<meta name="description" content="Newspaper articles by Hameeda Hossain, as published.">
+<meta property="og:title" content="Articles">
+<meta property="og:description" content="Newspaper articles by Hameeda Hossain, as published.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://res.cloudinary.com/dbuakj5dr/image/upload/v1782515537/portrait_n3u8aw.jpg">
+<link rel="canonical" href="https://hameedahossain.github.io/collective/articles.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem('hh-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-brand">Hameeda Hossain</a>
-  <ul class="nav-links">
-    <li><a href="articles.html" class="active">Articles</a></li>
-    <li><a href="interviews.html">Interviews</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="magazines.html">Magazines</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="photos.html">Photos</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Open menu">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-      <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
-    </svg>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="articles.html" onclick="closeMenu()">Articles</a>
-  <a href="interviews.html" onclick="closeMenu()">Interviews</a>
-  <a href="writings.html" onclick="closeMenu()">Writings</a>
-  <a href="magazines.html" onclick="closeMenu()">Magazines</a>
-  <a href="archives.html" onclick="closeMenu()">Archives</a>
-  <a href="photos.html" onclick="closeMenu()">Photos</a>
-  <a href="about.html" onclick="closeMenu()">About</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-name">Hameeda Hossain</span><span class="brand-sub">The Collective</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main"><a href="writings.html">Writings</a><a href="articles.html" aria-current="page">Articles</a><a href="interviews.html">Interviews</a><a href="books.html">Books</a><a href="magazines.html">Magazines</a><a href="videos.html">Media</a><a href="about.html">About</a><button class="theme-toggle" type="button">Dark</button></nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><p class="eyebrow">Articles</p><h1 class="page-title">Newspaper articles</h1><p class="lede">Her columns and op-eds as they appeared in print — in The Daily Star, Prothom Alo, New Age and other papers. Each opens as a scanned PDF.</p></div></section>
+<div class="wrap">
+  <div class="toolbar">
+    <label class="search"><span class="sr-only">Search articles</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" data-search placeholder="Search articles…"></label>
+    <div class="chips"><span class="label">Decade</span><button class="chip" type="button" data-filter="decade" data-value="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="decade" data-value="1990s" aria-pressed="false">1990s</button><button class="chip" type="button" data-filter="decade" data-value="2000s" aria-pressed="false">2000s</button><button class="chip" type="button" data-filter="decade" data-value="2010s" aria-pressed="false">2010s</button></div>
+    <div class="chips"><span class="label">Language</span><button class="chip" type="button" data-filter="lang" data-value="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="lang" data-value="en" aria-pressed="false">English</button><button class="chip" type="button" data-filter="lang" data-value="bn" aria-pressed="false">বাংলা</button></div>
+  </div>
+  <p class="result-count" data-count aria-live="polite"></p>
+  <ul class="list" data-filter-list><li data-item data-decade="2010s" data-lang="bn" data-medium="pdf" data-text="নারীর জন্য প্রত্যাশা prothom alo · january 5, 2016">
+  <a class="row" href="articles/prothom-alo-2016-narir-jonno-prottasha.pdf">
+    <span class="row-year">2016</span>
+    <span><span class="row-title" lang="bn">নারীর জন্য প্রত্যাশা</span><span class="row-src" style="display:block">Prothom Alo · January 5, 2016</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2010s" data-lang="bn" data-medium="pdf" data-text="তাঁর প্রভাব আমার জীবনে রয়েছে march 8, 2011">
+  <a class="row" href="articles/2011-তাঁর-প্রভাব-আমার-জীবনে-রয়েছে.pdf">
+    <span class="row-year">2011</span>
+    <span><span class="row-title" lang="bn">তাঁর প্রভাব আমার জীবনে রয়েছে</span><span class="row-src" style="display:block">March 8, 2011</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="pdf" data-text="are we serious about implementing cedaw? the daily star · september 3, 2008">
+  <a class="row" href="articles/daily-star-2008-are-we-serious-about-implementing-cedaw.pdf">
+    <span class="row-year">2008</span>
+    <span><span class="row-title">Are We Serious About Implementing CEDAW?</span><span class="row-src" style="display:block">The Daily Star · September 3, 2008</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="bn" data-medium="pdf" data-text="আমরা যদি সত্যিই সিডও সনদের বাস্তবায়ন চাই prothom alo · september 6, 2008">
+  <a class="row" href="articles/Prothom-Alo-2008-amra-jodi-shotti-CEDAW.pdf">
+    <span class="row-year">2008</span>
+    <span><span class="row-title" lang="bn">আমরা যদি সত্যিই সিডও সনদের বাস্তবায়ন চাই</span><span class="row-src" style="display:block">Prothom Alo · September 6, 2008</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="pdf" data-text="rationalizing labor relations in the garment industry new age · may 18, 2007">
+  <a class="row" href="articles/New Age-2007-rationalising labour relations in the garmet industry.pdf">
+    <span class="row-year">2007</span>
+    <span><span class="row-title">Rationalizing Labor Relations in the Garment Industry</span><span class="row-src" style="display:block">New Age · May 18, 2007</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="pdf" data-text="killing field of polashbari the daily star · april 27, 2005">
+  <a class="row" href="articles/daily-star-2005-killing-field-of-polashbari.pdf">
+    <span class="row-year">2005</span>
+    <span><span class="row-title">Killing Field of Polashbari</span><span class="row-src" style="display:block">The Daily Star · April 27, 2005</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="pdf" data-text="women&#x27;s rights in retreat? the daily star · july 5, 2005">
+  <a class="row" href="articles/daily-star-2005-womens-rights-in-retreat.pdf">
+    <span class="row-year">2005</span>
+    <span><span class="row-title">Women&#x27;s Rights in Retreat?</span><span class="row-src" style="display:block">The Daily Star · July 5, 2005</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="pdf" data-text="salma&#x27;s journey into activism the daily star · december 31, 2004">
+  <a class="row" href="articles/daily-star-2004-salma&#x27;s-journey-into-activism.pdf">
+    <span class="row-year">2004</span>
+    <span><span class="row-title">Salma&#x27;s Journey Into Activism</span><span class="row-src" style="display:block">The Daily Star · December 31, 2004</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="2000s" data-lang="en" data-medium="pdf" data-text="the way ahead for equality between men and women in bangladesh the independent · march 8, 2000">
+  <a class="row" href="articles/The Independent-2000-The Way ahead For Equality Betwern Men And Women In Bangladesh .pdf">
+    <span class="row-year">2000</span>
+    <span><span class="row-title">The Way Ahead for Equality Between Men and Women in Bangladesh</span><span class="row-src" style="display:block">The Independent · March 8, 2000</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li><li data-item data-decade="1990s" data-lang="en" data-medium="pdf" data-text="political options in a democratic society the new nation · february 24–25, 1991">
+  <a class="row" href="articles/New-Nation-1991-Political options In A Democratic Society.pdf">
+    <span class="row-year">1991</span>
+    <span><span class="row-title">Political Options in a Democratic Society</span><span class="row-src" style="display:block">The New Nation · February 24–25, 1991</span></span>
+    <span class="row-tags"><span class="tag plain">PDF</span></span>
+  </a></li></ul>
+  <p class="empty" data-empty>Nothing matches.</p>
 </div>
-
-<div class="page-header">
-  <a href="index.html" class="back-link">← Back to home</a>
-  <p class="page-header-eyebrow">The Collection</p>
-  <h1>Newspaper Articles</h1>
-  <p class="page-header-desc">Published pieces across national and international press — commentary, reportage, and opinion spanning five decades.</p>
-</div>
-
-<!-- FILTER BAR — add a button for each year or topic you want to filter by -->
-<div class="filter-bar">
-  <button class="filter-btn active" onclick="filter(this,'all')">All</button>
-  <!-- Copy the line below and change the year/topic for each filter you want -->
-  <button class="filter-btn" onclick="filter(this,'1970s')">1970s</button>
-  <button class="filter-btn" onclick="filter(this,'1980s')">1980s</button>
-  <button class="filter-btn" onclick="filter(this,'1990s')">1990s</button>
-  <button class="filter-btn" onclick="filter(this,'2000s')">2000s</button>
-  <button class="filter-btn" onclick="filter(this,'2010s')">2010s</button>
-  <button class="filter-btn" onclick="filter(this,'2020s')">2020s</button>
-</div>
-
-<div class="content-area">
-  <div class="item-list" id="itemList">
-
-    <!--
-    HOW TO ADD AN ARTICLE:
-    1. Upload your PDF to the /articles/ folder in GitHub
-    2. Copy the block below, paste it here
-    3. Fill in: href, year, title, source, and tag
-    4. Set data-decade to match your filter buttons above (e.g. "1990s")
-
-    <a href="articles/your-file.pdf" class="item" data-decade="1990s">
-      <span class="item-year">1994</span>
-      <div class="item-content">
-        <div class="item-title">Your Article Title Here</div>
-        <div class="item-source">The Daily Star · March 1994</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>The Collective</h2>
+        <p>An archive of the writings, interviews and public life of Hameeda Hossain — historian, writer and human rights defender.</p>
+        <p class="muted">Writings are reproduced for study and remembrance. Where a piece first appeared elsewhere, the original publication is credited and linked on its page.</p>
       </div>
-      <span class="item-tag">PDF</span>
-    </a>
-    -->
-
-    <!-- SAMPLE ENTRIES — replace with real ones -->
-  <a href="articles/2011-তাঁর-প্রভাব-আমার-জীবনে-রয়েছে.pdf" class="item" data-decade="2010s">
-  <span class="item-year">2011</span>
-  <div class="item-content">
-    <div class="item-title">তাঁর প্রভাব আমার জীবনে রয়েছে</div>
-    <div class="item-source">SOURCE NEEDED · March 8, 2011 </div>
+      <div>
+        <h2>Read</h2>
+        <ul><li><a href="writings.html">Writings</a></li><li><a href="articles.html">Newspaper articles</a></li><li><a href="interviews.html">Interviews</a></li><li><a href="books.html">Books</a></li></ul>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="magazines.html">Magazines</a></li><li><a href="videos.html">Media</a></li><li><a href="photos.html">Photographs</a></li><li><a href="archives.html">Archives</a></li><li><a href="about.html">About</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-base"><span>Hameeda Hossain Collective</span><span>হামিদা হোসেন</span></div>
   </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/daily-star-2004-salma's-journey-into-activism.pdf" class="item" data-decade="2000s">
-  <span class="item-year">2004</span>
-  <div class="item-content">
-    <div class="item-title">Salma's Journey Into Activism</div>
-    <div class="item-source">The Daily Star · December 31, 2004 </div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/daily-star-2005-killing-field-of-polashbari.pdf" class="item" data-decade="2000s">
-  <span class="item-year">2005</span>
-  <div class="item-content">
-    <div class="item-title">Killing Field of Polashbari</div>
-    <div class="item-source">The Daily Star · April 27, 2005 </div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/daily-star-2008-are-we-serious-about-implementing-cedaw.pdf" class="item" data-decade="2000s">
-  <span class="item-year">2008</span>
-  <div class="item-content">
-    <div class="item-title">Are We Serious About Implementing CEDAW?</div>
-    <div class="item-source">The Daily Star · September 3, 2008 </div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/New Age-2007-rationalising labour relations in the garmet industry.pdf" class="item" data-decade="2000s">
-  <span class="item-year">2007</span>
-  <div class="item-content">
-    <div class="item-title">Rationalizing Labor Relations in the Garment Industry</div>
-    <div class="item-source">New Age · May 18, 2007 </div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/Prothom-Alo-2008-amra-jodi-shotti-CEDAW.pdf" class="item" data-decade="2000s">
-  <span class="item-year">2008</span>
-  <div class="item-content">
-    <div class="item-title">আমরা যদি সত্যিই সিডও সনদের বাস্তবায়ন চাই</div>
-    <div class="item-source">Prothom Alo · September 6, 2008 </div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/prothom-alo-2016-narir-jonno-prottasha.pdf" class="item" data-decade="2010s">
-  <span class="item-year">2016</span>
-  <div class="item-content">
-    <div class="item-title">নারীর জন্য প্রত্যাশা</div>
-    <div class="item-source">Prothom Alo · January 5, 2016 </div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-    
-<a href="articles/New-Nation-1991-Political options In A Democratic Society.pdf" class="item" data-decade="1990s">
-  <span class="item-year">1991</span>
-  <div class="item-content">
-    <div class="item-title">Political Options in a Democratic Society</div>
-    <div class="item-source">The New Nation · February 24–25, 1991</div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/The Independent-2000-The Way ahead For Equality Betwern Men And Women In Bangladesh .pdf" class="item" data-decade="2000s">
-  <span class="item-year">2000</span>
-  <div class="item-content">
-    <div class="item-title">The Way Ahead for Equality Between Men and Women in Bangladesh</div>
-    <div class="item-source">The Independent · March 8, 2000</div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-
-<a href="articles/daily-star-2005-womens-rights-in-retreat.pdf" class="item" data-decade="2000s">
-  <span class="item-year">2005</span>
-  <div class="item-content">
-    <div class="item-title">Women's Rights in Retreat?</div>
-    <div class="item-source">The Daily Star · July 5, 2005</div>
-  </div>
-  <span class="item-tag">PDF</span>
-</a>
-    
-  </div>
-
-  <div class="upload-hint">
-    <strong>To add an article:</strong> Upload the PDF to the <code>articles/</code> folder in GitHub, then copy the sample block above, paste it into this file, and fill in the details. Set <code>data-decade="1990s"</code> (or whichever decade) so the filter buttons work.
-  </div>
-</div>
-
-<footer>
-  <span class="footer-name">Hameeda Hossain — Collective</span>
-  <span class="footer-note">Hosted free on GitHub Pages</span>
 </footer>
-
-<script>
-  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
-
-  function filter(btn, decade) {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('#itemList .item').forEach(item => {
-      if (decade === 'all' || item.dataset.decade === decade) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
-  }
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
