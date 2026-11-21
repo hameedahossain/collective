@@ -491,3 +491,20 @@ a.row:hover .row-title { color: var(--accent); }
 .cx-person .nm { font-family: var(--serif); font-size: 1.15rem; }
 .cx-person a:hover .nm { color: var(--accent); }
 .cx-person .rl { display: block; font-size: .84rem; color: var(--muted); }
+
+/* chord-diagram refinements: no rays, quiet centre */
+.cx-thread { display: none; }
+.cx-link { stroke-width: 1; opacity: .32; }
+.cx-stage.dim .cx-link { opacity: .05; }
+.cx-link.on { opacity: .95 !important; stroke-width: 1.8; }
+.cx-ring { stroke: rgba(255,255,255,.08); stroke-dasharray: none; }
+.cx-glabel { font-family: var(--sans); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; opacity: .85; }
+.cx-core { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 34%; text-align: center; pointer-events: none; }
+.core-name { display: block; font-family: var(--serif); font-size: clamp(1rem, 2.4vw, 1.6rem); color: #f4ece1; line-height: 1.15; }
+.core-sub { display: block; margin-top: .4rem; font-size: clamp(.6rem, 1.1vw, .8rem); color: #a99d8e; line-height: 1.4; }
+
+/* denser ring (66 people) */
+.cx-stage { max-width: 980px; }
+.cx-dot { width: clamp(18px, 2.5vw, 27px); font-size: clamp(.42rem, .7vw, .58rem); border-width: 1.5px; }
+.cx-name { --off: clamp(11px, 1.6vw, 17px); font-size: clamp(.52rem, .9vw, .72rem); }
+.cx-glabel { font-size: 12px; }

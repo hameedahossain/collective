@@ -669,8 +669,7 @@ if people:
   <div class="cx-layout">
     <div class="cx-stage" role="group" aria-label="Map of people connected to Hameeda Hossain">
       <svg viewBox="0 0 1000 1000" aria-hidden="true"></svg>
-      <div class="cx-centre"><img src="{E(about['portrait'])}" alt="Hameeda Hossain"></div>
-      <div class="cx-centre-label">Hameeda Hossain</div>
+      <div class="cx-core" aria-hidden="true"><span class="core-name">Hameeda Hossain</span><span class="core-sub">{len(people)} people · {len(present)} circles of work and life</span></div>
       <div class="cx-nodes"></div>
     </div>
     <aside class="cx-panel" aria-live="polite"><p class="cx-panel-empty"><strong>Choose a person</strong>Hover over a name to see their links, or click to read how they are connected to Dr. Hossain.</p></aside>

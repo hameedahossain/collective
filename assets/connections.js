@@ -12,7 +12,7 @@
   var svg = stage.querySelector('svg');
   var nodesLayer = stage.querySelector('.cx-nodes');
   var NS = 'http://www.w3.org/2000/svg';
-  var C = 500, R = 305;
+  var C = 500, R = 330;
 
   // ── layout: groups as sectors, people alternating between two rings ──
   var order = groups.map(function (g) { return g.key; });
@@ -48,8 +48,18 @@
     var r = R - 38, a0 = s.start, a1 = s.end;
     var x0 = C + r * Math.cos(a0), y0 = C + r * Math.sin(a0), x1 = C + r * Math.cos(a1), y1 = C + r * Math.sin(a1);
     el('path', { d: 'M' + x0 + ' ' + y0 + ' A' + r + ' ' + r + ' 0 ' + ((a1 - a0) > Math.PI ? 1 : 0) + ' 1 ' + x1 + ' ' + y1, stroke: gColor[k], 'class': 'cx-arc' }, deco);
+    var tr = r - 18, mid = (a0 + a1) / 2, lower = Math.sin(mid) > 0.15;
+    var ta = lower ? a1 : a0, tb = lower ? a0 : a1;
+    var tx0 = C + tr * Math.cos(ta), ty0 = C + tr * Math.sin(ta), tx1 = C + tr * Math.cos(tb), ty1 = C + tr * Math.sin(tb);
+    var pid = 'cxarc-' + k;
+    el('path', { id: pid, d: 'M' + tx0 + ' ' + ty0 + ' A' + tr + ' ' + tr + ' 0 0 ' + (lower ? 0 : 1) + ' ' + tx1 + ' ' + ty1, fill: 'none', stroke: 'none' }, deco);
+    var label = groups.filter(function (g) { return g.key === k; })[0].label;
+    var t = el('text', { 'class': 'cx-glabel', fill: gColor[k], dy: lower ? '10' : '0' }, deco);
+    var tp = el('textPath', { href: '#' + pid, startOffset: '50%', 'text-anchor': 'middle' }, t);
+    tp.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + pid);
+    tp.textContent = (a1 - a0) > 0.35 ? label : '';
   });
-  [150, R].forEach(function (r) { el('circle', { cx: C, cy: C, r: r, 'class': 'cx-ring' }, deco); });
+  [R].forEach(function (r) { el('circle', { cx: C, cy: C, r: r, 'class': 'cx-ring' }, deco); });
 
   // threads from centre + cross-links
   var threads = el('g', { 'class': 'cx-threads' }, svg);
@@ -65,8 +75,8 @@
       var q = byId[rid]; if (!q) return;
       var key = [p.id, rid].sort().join('|'); if (seen[key]) return; seen[key] = 1;
       var mx = (p._x + q._x) / 2, my = (p._y + q._y) / 2;
-      var cx = C + (mx - C) * 0.35, cy = C + (my - C) * 0.35;
-      var l = el('path', { d: 'M' + p._x + ' ' + p._y + ' Q' + cx + ' ' + cy + ' ' + q._x + ' ' + q._y, 'class': 'cx-link' }, links);
+      var cx = C + (mx - C) * 0.2, cy = C + (my - C) * 0.2;
+      var l = el('path', { d: 'M' + p._x + ' ' + p._y + ' Q' + cx + ' ' + cy + ' ' + q._x + ' ' + q._y, 'class': 'cx-link', stroke: gColor[p.group] }, links);
       l._a = p.id; l._b = rid;
       (p._links = p._links || []).push(l); (q._links = q._links || []).push(l);
     });
@@ -94,8 +104,10 @@
   });
 
   // ── highlight ──
+  var core = stage.querySelector('.cx-core'), coreHTML = core ? core.innerHTML : '';
   function focus(id) {
     stage.classList.toggle('dim', !!id);
+    if (core) core.innerHTML = id ? '<span class="core-name">' + byId[id].name + '</span><span class="core-sub">' + byId[id].role + '</span>' : coreHTML;
     people.forEach(function (p) {
       var rel = id && (p.id === id || (byId[id].related || []).indexOf(p.id) >= 0 || (p.related || []).indexOf(id) >= 0);
       p._node.classList.toggle('on', !!rel);

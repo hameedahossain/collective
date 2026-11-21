@@ -25,10 +25,13 @@
   "related": [
    "sara-hossain",
    "dina-hossain",
-   "rehman-sobhan"
+   "rehman-sobhan",
+   "erfan-ahmed",
+   "zeaul-huq",
+   "muyeedul-hasan"
   ],
   "source": "timeline.json; the-challenge-of-citizenship-in-building-a-just-society-bdi.md; https://en.wikipedia.org/wiki/Hameeda_Hossain",
-  "years": "1963–"
+  "years": ""
  },
  {
   "id": "sara-hossain",
@@ -51,10 +54,11 @@
   ],
   "related": [
    "kamal-hossain",
-   "dina-hossain"
+   "dina-hossain",
+   "neela-matin"
   ],
   "source": "timeline.json; 05 Bio & CV/Curriculum Vitae.doc",
-  "years": "late 1960s–"
+  "years": ""
  },
  {
   "id": "dina-hossain",
@@ -80,7 +84,7 @@
    "sara-hossain"
   ],
   "source": "timeline.json; 04 Memoir/09 Oxford Years/Dina- Questions Oxford Years.docx",
-  "years": "late 1960s–"
+  "years": ""
  },
  {
   "id": "iqbal-akhund",
@@ -101,9 +105,17 @@
     "verified": true
    }
   ],
-  "related": [],
+  "related": [
+   "ghulam-fatima-shaikh",
+   "father-akhund",
+   "mariam-akhund",
+   "rasheeda-husain",
+   "khursheed-erfan-ahmed",
+   "feroze-akhund",
+   "rafiq-akhund"
+  ],
   "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx; https://en.wikipedia.org/wiki/Iqbal_Akhund",
-  "years": "1936–"
+  "years": ""
  },
  {
   "id": "rehman-sobhan",
@@ -131,7 +143,11 @@
   "related": [
    "kamal-hossain",
    "salma-sobhan",
-   "khan-sarwar-murshid"
+   "khan-sarwar-murshid",
+   "zeaul-huq",
+   "muyeedul-hasan",
+   "erfan-ahmed",
+   "badruddin-umar"
   ],
   "source": "timeline.json; about.json; the-challenge-of-citizenship-in-building-a-just-society-bdi.md",
   "years": "1963–1971"
@@ -162,7 +178,9 @@
   "related": [
    "nurjahan-murshid",
    "abdur-razzaq",
-   "rehman-sobhan"
+   "rehman-sobhan",
+   "erfan-ahmed",
+   "zillur-rahman-siddiqui"
   ],
   "source": "timeline.json; the-challenge-of-citizenship-in-building-a-just-society-bdi.md",
   "years": "1963"
@@ -222,7 +240,8 @@
   "related": [
    "anisuzzaman",
    "rounaq-jahan",
-   "zainul-abedin"
+   "zainul-abedin",
+   "erfan-ahmed"
   ],
   "source": "remembering-professor-abdur-razzaq.md",
   "years": "1960s–1999"
@@ -345,7 +364,9 @@
    "roushan-jahan",
    "amirul-islam",
    "fazle-hasan-abed",
-   "anisuzzaman"
+   "anisuzzaman",
+   "khursheed-erfan-ahmed",
+   "km-subhan"
   ],
   "source": "timeline.json; remarks-at-the-sajida-foundation-conference.md; books.json",
   "years": "1964–2003"
@@ -376,7 +397,9 @@
   "related": [
    "salma-sobhan",
    "fazle-hasan-abed",
-   "ayesha-khanam"
+   "ayesha-khanam",
+   "khursheed-erfan-ahmed",
+   "km-subhan"
   ],
   "source": "timeline.json; the-challenge-of-citizenship-in-building-a-just-society-bdi.md; on-ayesha-khanam.md",
   "years": "1986–"
@@ -407,7 +430,9 @@
   "related": [
    "salma-sobhan",
    "amirul-islam",
-   "cole-p-dodge"
+   "cole-p-dodge",
+   "khursheed-erfan-ahmed",
+   "km-subhan"
   ],
   "source": "timeline.json; books.json; 05 Bio & CV/Curriculum Vitae.doc",
   "years": "1986–1992"
@@ -528,7 +553,8 @@
   ],
   "related": [
    "shireen-huq",
-   "naila-kabeer"
+   "naila-kabeer",
+   "marty-chen"
   ],
   "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; descriptions.json (Mittal Institute panel, 2021)",
   "years": "2011–2021"
@@ -563,7 +589,8 @@
   "related": [
    "ayesha-khanam",
    "sultana-kamal",
-   "jahanara-imam"
+   "jahanara-imam",
+   "maleka-begum"
   ],
   "source": "timeline.json; the-challenge-of-citizenship-in-building-a-just-society-bdi.md; on-ayesha-khanam.md",
   "years": "1970–1999"
@@ -593,7 +620,8 @@
   ],
   "related": [
    "sufia-kamal",
-   "amirul-islam"
+   "amirul-islam",
+   "maleka-begum"
   ],
   "source": "on-ayesha-khanam.md; implementing-womens-rights-through-cedaw-report-on-cedaw.md; timeline.json",
   "years": "1969–2021"
@@ -672,7 +700,8 @@
   ],
   "related": [
    "khushi-kabir",
-   "naila-kabeer"
+   "naila-kabeer",
+   "marty-chen"
   ],
   "source": "descriptions.json (Mittal Institute panel, 3 March 2021)",
   "years": "2021"
@@ -693,7 +722,8 @@
   ],
   "related": [
    "khushi-kabir",
-   "shireen-huq"
+   "shireen-huq",
+   "marty-chen"
   ],
   "source": "descriptions.json (Mittal Institute panel, 3 March 2021)",
   "years": "2021"
@@ -782,7 +812,9 @@
   ],
   "related": [
    "rounaq-jahan",
-   "devaki-jain"
+   "devaki-jain",
+   "vina-mazumdar",
+   "nimalka-fernando"
   ],
   "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; a-tribute-to-my-friend-rounaq-jahan.md",
   "years": "1969–"
@@ -960,7 +992,8 @@
    "jasleen-dhamija",
    "kamla-bhasin",
    "rounaq-jahan",
-   "kumari-jayawardena"
+   "kumari-jayawardena",
+   "vina-mazumdar"
   ],
   "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; a-tribute-to-my-friend-rounaq-jahan.md; timeline.json",
   "years": "1975–"
@@ -1283,5 +1316,534 @@
   ],
   "source": "books.json; the-challenge-of-citizenship-in-building-a-just-society-bdi.md",
   "years": "1990s–2017"
+ },
+ {
+  "id": "ghulam-fatima-shaikh",
+  "name": "Ghulam Fatima Shaikh",
+  "group": "family",
+  "role": "Dr. Hossain's maternal grandmother; founder of a girls' school in Hyderabad, Sindh",
+  "connection": "Ghulam Fatima Shaikh was born into a Hindu Amil family of Sindh that converted to Islam, and married Shaikh Shamsuddin as a girl. She trained as a midwife in Delhi and went with her family to Turkey, Madinah and Syria in the years of the First World War. Hameeda was born in her house in Hyderabad in 1936. In 1947 she turned an abandoned house near the railway station into a shelter and hospital for refugees and enlisted the eleven-year-old Hameeda to help. The same year she founded the Fatima Girls Middle School, which she ran until her death in 1981. Dr. Hossain wrote about her life as a student at Wellesley, and her oral memoir was published as Footprints in Time, translated by her granddaughter Rasheeda Husain.",
+  "works": [
+   {
+    "label": "Herstory: Women's Initiatives for Peace and Coping with War",
+    "href": "writings/herstory-womens-initiatives-for-peace-and-coping-with-war.html"
+   },
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   },
+   {
+    "label": "Timeline: caring for Partition refugees, 1947",
+    "href": "timeline.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "The Express Tribune: review of Footprints in Time",
+    "url": "https://tribune.com.pk/story/144960/footprints-in-time-a-great-woman-with-a-greater-story",
+    "verified": true
+   },
+   {
+    "label": "Oxford University Press Pakistan: launch of her memoirs",
+    "url": "https://oup.com.pk/media/pages/pressrelease/2010pr13.html",
+    "verified": true
+   }
+  ],
+  "related": [
+   "mariam-akhund",
+   "rasheeda-husain",
+   "iqbal-akhund"
+  ],
+  "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx; 04 Memoir/HH Memoir MSS 14 Sept.docx; herstory-womens-initiatives-for-peace-and-coping-with-war.md; timeline.json; https://tribune.com.pk/story/144960/footprints-in-time-a-great-woman-with-a-greater-story; https://oup.com.pk/media/pages/pressrelease/2010pr13.html",
+  "years": ""
+ },
+ {
+  "id": "father-akhund",
+  "name": "Judge Akhund",
+  "group": "family",
+  "role": "Her father; a judge in Sindh and Khairpur State",
+  "connection": "Dr. Hossain's father served as a judge in towns across Sindh, among them Sukkur, Nawabshah, Shikarpur and Larkana, and later joined the judicial service of Khairpur State, where he heard cases arising from the Hur uprising of the early 1940s. He kept a diary, told the children adventure stories and folk tales, and wanted them to have a modern education, sending the six of them to convent and missionary schools in Karachi. In 1971 Dr. Hossain and her daughters lived with her parents in Karachi while Kamal Hossain was imprisoned.",
+  "works": [
+   {
+    "label": "Timeline: the Hur uprising and the move to Karachi",
+    "href": "timeline.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "mariam-akhund",
+   "iqbal-akhund",
+   "rasheeda-husain",
+   "khursheed-erfan-ahmed",
+   "feroze-akhund",
+   "rafiq-akhund"
+  ],
+  "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx; 04 Memoir/01 Hyderabad/Chapter 1 (Ready for Final) Copy .docx; 10 Not by HH/Reminiscences – Chapter 1 (Rasheeda).doc; https://en.wikipedia.org/wiki/Iqbal_Akhund",
+  "years": ""
+ },
+ {
+  "id": "mariam-akhund",
+  "name": "Mariam Akhund (née Shaikh)",
+  "group": "family",
+  "role": "Dr. Hossain's mother",
+  "connection": "Mariam Akhund was the daughter of Ghulam Fatima and Shaikh Shamsuddin. Married at seventeen, she went with her first child, Iqbal, to her mother in Delhi and learned English at St Mary's Convent there. She later moved the six children to Karachi so they could go to school, and raised them between Karachi and Hyderabad. In 1971 Dr. Hossain and her daughters lived with her parents at their Karachi home in the Sindhi Muslim Housing Society.",
+  "works": [
+   {
+    "label": "Timeline: early life in Sindh",
+    "href": "timeline.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "ghulam-fatima-shaikh",
+   "father-akhund",
+   "iqbal-akhund",
+   "rasheeda-husain",
+   "khursheed-erfan-ahmed",
+   "feroze-akhund",
+   "rafiq-akhund"
+  ],
+  "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx; 08 Personal & Family (private)/Family Tree.doc; 04 Memoir/06 1971",
+  "years": ""
+ },
+ {
+  "id": "rasheeda-husain",
+  "name": "Rasheeda Husain (née Akhund)",
+  "group": "family",
+  "role": "Teacher, broadcaster and translator; Dr. Hossain's eldest sister",
+  "connection": "Rasheeda was the eldest of the Akhund sisters, about eight years older than Hameeda. With Iqbal she took charge of the younger children's lessons during holidays, and she shared her boarding room at St Joseph's Convent in Karachi with her youngest sister. She married Akhlaque Hussain and lived in Dhaka in the early 1960s, then in Karachi, where in 1971 she and Dr. Hossain shared the family house. She worked as a teacher, newsreader, radio music presenter, research librarian and publicity manager, and translated from Sindhi and annotated their grandmother's memoir, Footprints in Time (Oxford University Press). She also wrote her own reminiscences of the family's childhood.",
+  "works": [
+   {
+    "label": "Photo: Hameeda with her sisters Rasheeda and Khursheed",
+    "href": "photos.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Oxford University Press Pakistan: launch of Footprints in Time",
+    "url": "https://oup.com.pk/media/pages/pressrelease/2010pr13.html",
+    "verified": true
+   }
+  ],
+  "related": [
+   "ghulam-fatima-shaikh",
+   "khursheed-erfan-ahmed",
+   "iqbal-akhund",
+   "feroze-akhund",
+   "rafiq-akhund"
+  ],
+  "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx; 08 Personal & Family (private)/Family Tree.doc; 10 Not by HH/Reminiscences – Chapter 1 (Rasheeda).doc; https://oup.com.pk/media/pages/pressrelease/2010pr13.html",
+  "years": ""
+ },
+ {
+  "id": "khursheed-erfan-ahmed",
+  "name": "Khursheed Erfan Ahmed",
+  "group": "family",
+  "role": "Educator and counsellor; co-founder of Ain o Salish Kendra; Dr. Hossain's sister",
+  "connection": "Khursheed Erfan Ahmed taught in Hyderabad, Sindh, in the early 1950s and was the first woman secretary of the Sind University students' union. After her marriage to Erfan Ahmed she settled in Dhaka, and it was on a visit to her home in 1963 that Dr. Hossain met Rehman Sobhan and Kamal Hossain. The sisters worked together with the Srijani women's craft cooperative and the Arunima artisans' outlet in the 1960s, and both were among the founders of Ain o Salish Kendra in 1986. At ASK she directed education and training, prepared legal literacy materials, started the Jokhon Tokhon schools for working children and brought psychosocial counselling into its work. Dr. Hossain thanks her in Claiming Our Rights.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   },
+   {
+    "label": "Photo: Hameeda with her sisters Rasheeda and Khursheed",
+    "href": "photos.html"
+   },
+   {
+    "label": "Timeline: Ain o Salish Kendra founded, 1986",
+    "href": "timeline.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "The Daily Star: Khursheed Erfan Ahmed, a legacy built on justice, education and compassion",
+    "url": "https://www.thedailystar.net/opinion/views/news/khursheed-erfan-ahmed-legacy-built-justice-education-and-compassion-4240366",
+    "verified": true
+   }
+  ],
+  "related": [
+   "erfan-ahmed",
+   "salma-sobhan",
+   "amirul-islam",
+   "fazle-hasan-abed",
+   "km-subhan",
+   "rasheeda-husain",
+   "iqbal-akhund"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 04 Memoir/Reference Materials/Khursheed Erfan Ahmed Bio.docx; 04 Memoir/05 Forum; Claiming Our Rights – Final Version (1 Mar 2023).docx; https://www.thedailystar.net/opinion/views/news/khursheed-erfan-ahmed-legacy-built-justice-education-and-compassion-4240366",
+  "years": ""
+ },
+ {
+  "id": "feroze-akhund",
+  "name": "Dr. Feroze Akhund",
+  "group": "family",
+  "role": "Medical doctor; Dr. Hossain's brother",
+  "connection": "Feroze was one of the three youngest Akhund children with Rafiq and Hameeda, and went to St Patrick's School in Karachi. He became a doctor. In 1971 he and Rasheeda added an upper floor to the family house in Karachi, where Dr. Hossain and her daughters lived through the war; she and Feroze listened to the BBC together each night and went out into the garden to sing when the war ended on 16 December.",
+  "works": [
+   {
+    "label": "Timeline: 1971",
+    "href": "timeline.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "rafiq-akhund",
+   "rasheeda-husain",
+   "iqbal-akhund",
+   "khursheed-erfan-ahmed"
+  ],
+  "source": "04 Memoir/00 Full Compilation/HH MEMOIR(HH:SH).docx; 08 Personal & Family (private)/Family Tree.doc; 04 Memoir/06 1971/hameeda recollections-comments10April22.docx",
+  "years": ""
+ },
+ {
+  "id": "rafiq-akhund",
+  "name": "Rafiq Akhund",
+  "group": "family",
+  "role": "Dr. Hossain's brother, two years her senior",
+  "connection": "Rafiq was the brother closest in age to Hameeda. They went to school in Karachi as children and travelled together to Karachi with their sisters days before Partition in 1947. In the winter of 1951 both entered the college essay competition that sent her to the New York Herald Tribune Forum in 1952.",
+  "works": [
+   {
+    "label": "Timeline: Herald Tribune Forum, 1952",
+    "href": "timeline.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "feroze-akhund",
+   "rasheeda-husain",
+   "khursheed-erfan-ahmed",
+   "iqbal-akhund"
+  ],
+  "source": "04 Memoir/HH Memoir MSS 14 Sept.docx; 04 Memoir/03 Herald Tribune & Wellesley/Newclippings and other materials/us 1952 hameeda transcript; 08 Personal & Family (private)/Family Tree.doc",
+  "years": ""
+ },
+ {
+  "id": "erfan-ahmed",
+  "name": "Erfan Ahmed",
+  "group": "family",
+  "role": "Naval officer, oil company executive and diplomat; Dr. Hossain's brother-in-law",
+  "connection": "Erfan Ahmed married Khursheed in 1952. After leaving the Pakistan Navy he worked for Burmah Eastern in Dhaka, and their home became a meeting place for the New Values circle of academics and professionals, where Dr. Hossain met Kamal Hossain in 1963. He took part in the discussions that led to Forum and read and commented on its articles, though he did not join it formally. In 1970 he was posted as ambassador to Tunisia. Dr. Hossain wrote a memoir piece about him and his quiet efforts for a negotiated settlement before 1971.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "khursheed-erfan-ahmed",
+   "kamal-hossain",
+   "rehman-sobhan",
+   "abdur-razzaq",
+   "khan-sarwar-murshid"
+  ],
+  "source": "04 Memoir/Other Memoir Pieces/Jane Austenish – Life in Hyderabad.docx; the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 04 Memoir/06 1971/hameeda recollections-comments10April22.docx",
+  "years": ""
+ },
+ {
+  "id": "zeaul-huq",
+  "name": "Zeaul Huq (Tulu)",
+  "group": "forum-and-friends",
+  "role": "Co-founder of Forum",
+  "connection": "Zeaul Huq, known as Tulu, belonged to the New Values circle that met at Khursheed and Erfan Ahmed's house, and Rehman Sobhan names him with Kamal and Hameeda Hossain as a founder of Forum in 1969. In January 1972 he met the Hossains on the tarmac when they flew back to Dhaka with Sheikh Mujibur Rahman, and took them to his house on Green Road.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "rehman-sobhan",
+   "kamal-hossain",
+   "erfan-ahmed",
+   "muyeedul-hasan"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 04 Memoir/HH Memoir MSS 14 Sept.docx; 04 Memoir/Reference Materials/Other Materials/BDI HH Hyperlinks Jul 18.docx (Rehman Sobhan, 'The philosophy behind the publication of Forum')",
+  "years": "1963–1972"
+ },
+ {
+  "id": "muyeedul-hasan",
+  "name": "Muyeedul Hasan",
+  "group": "forum-and-friends",
+  "role": "Journalist and author of Muldhara '71",
+  "connection": "Muyeedul Hasan, a journalist who wrote in Bangla, was a regular in the discussions at the Hossains' Dhanmondi house that led to Forum, and wrote on autonomy and politics for it. In 1971 he arranged Rehman Sobhan's escape through the villages to the border. He was among the friends who met the family at Dhaka airport in January 1972.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [],
+  "related": [
+   "rehman-sobhan",
+   "kamal-hossain",
+   "zeaul-huq"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 04 Memoir/05 Forum/forum draft 2HH-16dec2024.docx; 04 Memoir/HH Memoir MSS 14 Sept.docx; 07 Proposals/Forum Book List by Heading (20 Apr 2021, KH).docx",
+  "years": "1960s–1972"
+ },
+ {
+  "id": "badruddin-umar",
+  "name": "Badruddin Umar",
+  "group": "forum-and-friends",
+  "role": "Marxist historian and writer",
+  "connection": "Badruddin Umar taught political science at Rajshahi University and joined the Dhaka discussion circle on his visits to the city in the 1960s. He wrote for Forum, including a piece on the Language Movement in February 1971. Dr. Hossain recalls the circle as one where Marxists like him and World Bank fellows listened to each other.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   },
+   {
+    "label": "Remembering Professor Abdur Razzaq",
+    "href": "writings/remembering-professor-abdur-razzaq.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Badruddin_Umar",
+    "verified": true
+   }
+  ],
+  "related": [
+   "rehman-sobhan",
+   "abdur-razzaq",
+   "erfan-ahmed"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; remembering-professor-abdur-razzaq.md; 04 Memoir/05 Forum/Forum Book List Yearwise 1969-71; https://en.wikipedia.org/wiki/Badruddin_Umar",
+  "years": "1960s–1971"
+ },
+ {
+  "id": "zillur-rahman-siddiqui",
+  "name": "Zillur Rahman Siddiqui",
+  "group": "forum-and-friends",
+  "role": "Writer and educationist; vice-chancellor of Jahangirnagar University",
+  "connection": "Zillur Rahman Siddiqui wrote for New Values, the humanist journal Dr. Hossain helped edit in 1963. In March 2009 the two took part in a Prothom Alo Independence Day roundtable on the unmet hopes of the Liberation War.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zillur_Rahman_Siddiqui",
+    "verified": true
+   }
+  ],
+  "related": [
+   "khan-sarwar-murshid"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; descriptions.json (Prothom Alo, 26 March 2009); https://en.wikipedia.org/wiki/Zillur_Rahman_Siddiqui",
+  "years": "1963–2009"
+ },
+ {
+  "id": "tareque-masud",
+  "name": "Tareque Masud",
+  "group": "forum-and-friends",
+  "role": "Filmmaker of Muktir Gaan, Muktir Kotha and Narshundor",
+  "connection": "Dr. Hossain spoke at the launch of a bilingual volume on Tareque Masud's life, thanking its makers for recording a page of history. She remembered him and Catherine Masud for showing 1971 through the voices of young people and villagers rather than leaders.",
+  "works": [],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tareque_Masud",
+    "verified": true
+   }
+  ],
+  "related": [],
+  "source": "01 Writings/08 Tributes & Remembrances/Note of Thanks – Volume on Tareque's Life.docx; https://en.wikipedia.org/wiki/Tareque_Masud",
+  "years": "after 2011"
+ },
+ {
+  "id": "asaduzzaman-noor",
+  "name": "Asaduzzaman Noor",
+  "group": "forum-and-friends",
+  "role": "Actor and politician; former Minister of Cultural Affairs",
+  "connection": "Asaduzzaman Noor talked with Dr. Hossain about her life and work in a 2021 episode of the Desh TV programme Bela Obela Sarabela.",
+  "works": [],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Asaduzzaman_Noor",
+    "verified": true
+   }
+  ],
+  "related": [],
+  "source": "interviews.json; descriptions.json; https://en.wikipedia.org/wiki/Asaduzzaman_Noor",
+  "years": "2021"
+ },
+ {
+  "id": "km-subhan",
+  "name": "Justice K. M. Subhan",
+  "group": "ask-and-rights",
+  "role": "Judge; a founding member of Ain o Salish Kendra",
+  "connection": "Justice K. M. Subhan was among the founders of Ain o Salish Kendra with Dr. Hossain, Salma Sobhan, Khursheed Erfan Ahmed, M. Amir-ul Islam and F. H. Abed. In ASK's early years he visited regularly to advise on plaints. He also spoke for the rights of the Ahmadiyya community and for the trial of 1971 collaborators.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "The Business Standard: Justice KM Subhan, on the right side of history",
+    "url": "https://www.tbsnews.net/opinion/justice-km-subhan-right-side-history",
+    "verified": true
+   }
+  ],
+  "related": [
+   "salma-sobhan",
+   "khursheed-erfan-ahmed",
+   "amirul-islam",
+   "fazle-hasan-abed"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; Claiming Our Rights – Final Version (1 Mar 2023).docx; https://www.tbsnews.net/opinion/justice-km-subhan-right-side-history",
+  "years": "1986–2007"
+ },
+ {
+  "id": "maleka-begum",
+  "name": "Maleka Begum",
+  "group": "movement",
+  "role": "Writer and a founding general secretary of Bangladesh Mahila Parishad",
+  "connection": "Maleka Begum worked alongside Begum Sufia Kamal in the Mahila Parishad from 1970. In the 1980s she organised the meetings at which the Parishad and Ain o Salish Kendra drafted joint demands for family law reform. Dr. Hossain drew on her compilation of newspaper reports on fatwas in her writing on violence against women.",
+  "works": [
+   {
+    "label": "On Ayesha Khanam",
+    "href": "writings/on-ayesha-khanam.html"
+   },
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maleka_Begum",
+    "verified": true
+   }
+  ],
+  "related": [
+   "sufia-kamal",
+   "ayesha-khanam"
+  ],
+  "source": "on-ayesha-khanam.md; the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 01 Writings/02 Violence Against Women/Bringing Women's Lives to Order.doc; https://en.wikipedia.org/wiki/Maleka_Begum",
+  "years": "1970s–2000s"
+ },
+ {
+  "id": "nimalka-fernando",
+  "name": "Nimalka Fernando",
+  "group": "movement",
+  "role": "Sri Lankan lawyer and women's rights activist",
+  "connection": "When Dr. Hossain joined the Asia Pacific Forum on Women, Law and Development in the 1980s, her first task, on Nimalka Fernando's advice, was a report on the network's activities. She later served on its Regional Council.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nimalka_Fernando",
+    "verified": true
+   }
+  ],
+  "related": [
+   "kumari-jayawardena"
+  ],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 04 Memoir/HH Memoir MSS 14 Sept.docx; https://en.wikipedia.org/wiki/Nimalka_Fernando",
+  "years": "1980s"
+ },
+ {
+  "id": "vina-mazumdar",
+  "name": "Vina Mazumdar",
+  "group": "movement",
+  "role": "Indian feminist scholar; founding director of the Centre for Women's Development Studies",
+  "connection": "Dr. Hossain met Vina Mazumdar through the 1975 Mexico conference and the regional networks that followed, and counts her with Devaki Jain and Kumari Jayawardena among the South Asian feminists she worked with in DAWN and APWLD meetings.",
+  "works": [
+   {
+    "label": "A Tribute to My Friend Rounaq Jahan",
+    "href": "writings/a-tribute-to-my-friend-rounaq-jahan.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vina_Mazumdar",
+    "verified": true
+   }
+  ],
+  "related": [
+   "devaki-jain",
+   "kumari-jayawardena",
+   "rounaq-jahan",
+   "kamla-bhasin"
+  ],
+  "source": "a-tribute-to-my-friend-rounaq-jahan.md; 04 Memoir/HH Memoir MSS 14 Sept.docx; https://en.wikipedia.org/wiki/Vina_Mazumdar",
+  "years": "1975–2013"
+ },
+ {
+  "id": "neela-matin",
+  "name": "Neela Matin",
+  "group": "co-authors",
+  "role": "Co-author of Women and the Legal System",
+  "connection": "Neela Matin co-wrote the report Women and the Legal System with Dr. Hossain and Sara Hossain. She also wrote on women's political participation and freedom from violence for ASK's Human Rights in Bangladesh 2001, which Dr. Hossain cites in her work on fatwas.",
+  "works": [],
+  "links": [],
+  "related": [
+   "sara-hossain"
+  ],
+  "source": "05 Bio & CV/Curriculum Vitae.doc; 05 Bio & CV/Resume (earlier version).docx; 01 Writings/02 Violence Against Women/Bringing Women's Lives to Order.doc",
+  "years": "1990s–2002"
+ },
+ {
+  "id": "munir-quddus",
+  "name": "Munir Quddus",
+  "group": "scholarship",
+  "role": "Economist; president of the Bangladesh Development Initiative",
+  "connection": "Munir Quddus told Dr. Hossain of the Bangladesh Development Initiative's 2021 Lifetime Achievement Award and invited the lecture she gave on citizenship and a just society. As editor of the BDI Development Newsletter, he also interviewed her about her education, journalism and human rights work.",
+  "works": [
+   {
+    "label": "The Challenge of Citizenship in Building a Just Society",
+    "href": "writings/the-challenge-of-citizenship-in-building-a-just-society-bdi.html"
+   }
+  ],
+  "links": [
+   {
+    "label": "Bangladesh Development Initiative profile",
+    "url": "https://bdiusa.org/munir-quddus-ph-d/",
+    "verified": true
+   }
+  ],
+  "related": [],
+  "source": "the-challenge-of-citizenship-in-building-a-just-society-bdi.md; 03 Interviews & Writings about HH/BDI Newsletter Interview – Questions (12 Mar 2021).docx",
+  "years": "2021"
+ },
+ {
+  "id": "marty-chen",
+  "name": "Martha (Marty) Chen",
+  "group": "scholarship",
+  "role": "Development scholar at Harvard; co-founder of WIEGO",
+  "connection": "Marty Chen moderated the March 2021 Harvard panel Bangladesh at 50: Women's Empowerment, where Dr. Hossain spoke alongside Shireen Huq, Naila Kabeer and Khushi Kabir.",
+  "works": [],
+  "links": [
+   {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martha_Chen",
+    "verified": true
+   }
+  ],
+  "related": [
+   "shireen-huq",
+   "naila-kabeer",
+   "khushi-kabir"
+  ],
+  "source": "interviews.json; descriptions.json (Mittal South Asia Institute, 3 March 2021); https://en.wikipedia.org/wiki/Martha_Chen",
+  "years": "2021"
  }
 ]
