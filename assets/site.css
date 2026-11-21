@@ -387,11 +387,36 @@ a.row:hover .row-title { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } .reveal { opacity: 1; transform: none; } }
 @media print { .site-header, .site-footer, .toolbar, .pager, .copy-btn, .theme-toggle, .tl-controls { display: none !important; } body { background: #fff; } }
 
-.theme-tile.no-img { aspect-ratio: 3/2; background:
-  repeating-linear-gradient(45deg, rgba(255,255,255,.06) 0 2px, transparent 2px 14px),
-  repeating-linear-gradient(-45deg, rgba(255,255,255,.06) 0 2px, transparent 2px 14px), var(--tbg, linear-gradient(150deg, #8a2f3f, #3b1820)); }
-.theme-tile.no-img .tt-shade { background: linear-gradient(0deg, rgba(12,8,6,.45), transparent 70%); }
-.theme-tile.no-img:nth-child(5n+2) { --tbg: linear-gradient(150deg, #2f5d62, #173538); }
-.theme-tile.no-img:nth-child(5n+3) { --tbg: linear-gradient(150deg, #9a7438, #5a431c); }
-.theme-tile.no-img:nth-child(5n+4) { --tbg: linear-gradient(150deg, #3f3a5c, #211e33); }
-.theme-tile.no-img:nth-child(5n+5) { --tbg: linear-gradient(150deg, #6a3b2a, #3a1d12); }
+
+/* ── Designed panels (used where there is no photograph of her) ── */
+.t-gender-and-development { --tc: #7a3b4b; }
+.t-violence-against-women { --tc: #5a2a35; }
+.t-human-rights-justice-and-religion { --tc: #2f4f5f; }
+.t-democracy-and-politics { --tc: #3d5944; }
+.t-labour-and-workers-rights { --tc: #6b4a2b; }
+.t-1971-war-and-history { --tc: #4a4458; }
+.t-crafts-weaving-and-heritage { --tc: #8a6a2f; }
+.t-tributes-and-remembrances { --tc: #5f574d; }
+.t-speeches-talks-and-lectures { --tc: #2e3b52; }
+.t-forewords-prefaces-and-reviews { --tc: #6a3b2a; }
+.motif {
+  background-color: var(--tc, #7a3b4b);
+  background-image:
+    radial-gradient(circle, rgba(255,240,220,.22) 0 1.6px, transparent 2.2px),
+    repeating-linear-gradient(45deg, rgba(255,240,220,.08) 0 1px, transparent 1px 13px),
+    repeating-linear-gradient(-45deg, rgba(255,240,220,.08) 0 1px, transparent 1px 13px);
+  background-size: 18.4px 18.4px, auto, auto;
+  background-position: 9.2px 9.2px, 0 0, 0 0;
+  color: #f6ecdf;
+}
+.theme-tile.motif { aspect-ratio: 4/5; }
+.theme-tile.motif .tt-shade { background: linear-gradient(0deg, rgba(10,6,4,.55), transparent 65%); }
+.theme-tile.motif::before { content: ""; position: absolute; inset: 10px; border: 1px solid rgba(255,240,220,.28); border-radius: 2px; }
+.row-thumb.blank.motif { display: grid; place-items: center; position: relative; }
+.row-thumb.blank.motif::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(255,240,220,.3); }
+.row-thumb .orn { font-size: 1.6rem; color: rgba(255,240,220,.85); position: relative; }
+.ss-design { display: grid; place-items: center; padding: 1.4rem 1.6rem; position: relative; }
+.ss-design::before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(255,240,220,.3); }
+.ss-q { position: relative; font-family: var(--serif); font-style: italic; font-size: 1.12rem; line-height: 1.4; text-align: center; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.reading-band { max-width: 44rem; height: 14px; margin: 0 auto 2.6rem; border-radius: 2px; }
+@media (min-width: 720px) { .reading-band { width: calc(100% - 2.5rem); } }

@@ -61,7 +61,10 @@ def image_for(ref):
 
 
 def theme_image(theme, slug_=None):
-    return image_for(writing_art.get(slug_)) or image_for(theme_art.get(theme))
+    """Individual writings only get a photograph when one belongs to that piece; themes may use one of her photos."""
+    if slug_ is not None:
+        return image_for(writing_art.get(slug_))
+    return image_for(theme_art.get(theme))
 
 
 # ── Markdown ────────────────────────────────────────────────────────────────
@@ -171,10 +174,10 @@ def page(path, title, body, active="", description="", og_image=None, extra_head
     <div class="foot-grid">
       <div>
         <p class="foot-name">Hameeda Hossain <span lang="bn">হামিদা হোসেন</span></p>
-        <p class="muted">Writings are reproduced for study and remembrance; each page credits where a piece first appeared. Photographs are from her personal archive unless credited otherwise.</p>
+        <p class="muted">Writings are reproduced for study and remembrance; each page credits where a piece first appeared. Photographs are from her personal archive.</p>
       </div>
       <ul><li><a href="{up}writings.html">Writings</a></li><li><a href="{up}timeline.html">Life &amp; times</a></li><li><a href="{up}articles.html">Newspaper articles</a></li><li><a href="{up}interviews.html">Interviews</a></li></ul>
-      <ul><li><a href="{up}books.html">Books</a></li><li><a href="{up}videos.html">Video &amp; audio</a></li><li><a href="{up}magazines.html">Magazines</a></li><li><a href="{up}photos.html">Photographs</a></li><li><a href="{up}about.html">About</a></li><li><a href="{up}about.html#credits">Image credits</a></li></ul>
+      <ul><li><a href="{up}books.html">Books</a></li><li><a href="{up}videos.html">Video &amp; audio</a></li><li><a href="{up}magazines.html">Magazines</a></li><li><a href="{up}photos.html">Photographs</a></li><li><a href="{up}about.html">About</a></li></ul>
     </div>
   </div>
 </footer>
@@ -229,7 +232,7 @@ def entry(href, thumb, year, title, source, summary, tags, data, prefix="", exte
     """One consistent list row used on every list page."""
     t = (f'<span class="row-thumb {thumb_class}"><img src="{prefix}{E(thumb)}" alt="" loading="lazy"></span>' if thumb and not thumb.startswith("http")
          else f'<span class="row-thumb {thumb_class}"><img src="{E(thumb)}" alt="" loading="lazy"></span>' if thumb
-         else f'<span class="row-thumb blank {thumb_class}" aria-hidden="true"><span>{E((title or "?")[0])}</span></span>')
+         else f'<span class="row-thumb blank {thumb_class}" aria-hidden="true"><span class="orn">❦</span></span>')
     attrs = " ".join(f'data-{k}="{E(v)}"' for k, v in data.items())
     tag_html = "".join(f'<span class="tag{" plain" if i else ""}">{E(x)}</span>' for i, x in enumerate(tags) if x)
     return f"""<li data-item {attrs}>
@@ -273,7 +276,7 @@ for i, w in enumerate(writings):
     pager += (f'<a class="next" href="{next_w["slug"]}.html"><small>Next</small><span{langattr(next_w["title"])}>{E(next_w["title"])}</span></a>' if next_w else "")
     pager += "</nav>"
     img = theme_image(w["theme"], w["slug"])
-    banner = (f'<figure class="reading-banner"><img src="../{E(img["src"])}" alt=""><figcaption>{E(img["alt"])}{(" · " + E(img["credit"])) if img.get("credit") else ""}</figcaption></figure>' if img else "")
+    banner = f'<div class="reading-band motif t-{slug(w["theme"])}" aria-hidden="true"></div>'
     body = f"""
 <article>
   <header class="reading-head"><div class="wrap">
@@ -310,7 +313,8 @@ def writing_row(w, prefix=""):
     text = " ".join([w["title"], w.get("publication") or "", w.get("summary", ""), w["theme"]]).lower()
     return entry(f"{prefix}writings/{w['slug']}.html", img["thumb"] if img else None, w.get("year"), w["title"], w["pub_short"],
                  w.get("summary", ""), [w["theme"], "বাংলা" if w["bn"] else ""],
-                 {"theme": slug(w["theme"]), "lang": "bn" if w["bn"] else "en", "text": text}, prefix=prefix)
+                 {"theme": slug(w["theme"]), "lang": "bn" if w["bn"] else "en", "text": text}, prefix=prefix,
+                 thumb_class="" if img else f"motif t-{slug(w['theme'])}")
 
 
 body = head("Writings", f"{len(writings)} essays, columns, talks and tributes, in full. Each one notes where it first appeared.") + f"""
@@ -567,7 +571,9 @@ for s in FEATURES:
     if not w:
         continue
     im = feat_img(w)
-    side.append(f'''<a class="side-story" href="writings/{w['slug']}.html">{f'<span class="ss-img"><img src="{E(im["thumb"])}" alt="" loading="lazy"></span>' if im else ''}
+    panel = (f'<span class="ss-img"><img src="{E(im["thumb"])}" alt="" loading="lazy"></span>' if im else
+             f'<span class="ss-img ss-design motif t-{slug(w["theme"])}"><span class="ss-q">“{E(w.get("pull_quote") or w["title"])}”</span></span>')
+    side.append(f'''<a class="side-story" href="writings/{w['slug']}.html">{panel}
   <span class="kicker">{E(w['theme'])}</span><span class="ss-title">{E(w['title'])}</span><span class="ss-sum">{E(w.get('summary'))}</span></a>''')
 numbered = []
 for n, s in enumerate(NUMBERED, 1):
@@ -578,7 +584,7 @@ for n, s in enumerate(NUMBERED, 1):
 tiles = []
 for s, t in themes_present:
     im = theme_image(t)
-    tiles.append(f'''<a class="theme-tile{'' if im else ' no-img'}" href="writings.html?theme={s}">{f'<img src="{E(im["thumb"])}" alt="" loading="lazy">' if im else ''}<span class="tt-shade"></span><span class="tt-text"><span class="tt-name">{E(t)}</span><span class="tt-n">{theme_counts[s]} {'piece' if theme_counts[s] == 1 else 'pieces'}</span></span></a>''')
+    tiles.append(f'''<a class="theme-tile{'' if im else f' no-img motif t-{s}'}" href="writings.html?theme={s}">{f'<img src="{E(im["thumb"])}" alt="" loading="lazy">' if im else ''}<span class="tt-shade"></span><span class="tt-text"><span class="tt-name">{E(t)}</span><span class="tt-n">{theme_counts[s]} {'piece' if theme_counts[s] == 1 else 'pieces'}</span></span></a>''')
 
 film = [p for p in photos if p["slug"] != "portrait"][:12]
 filmstrip = "".join(f'<figure><img src="assets/photos/thumbs/{p["slug"]}.jpg" alt="{E(p["caption"])}" loading="lazy"><figcaption>{E(p.get("year"))}</figcaption></figure>' for p in film)
